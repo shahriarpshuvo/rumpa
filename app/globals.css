@@ -19,6 +19,16 @@
   --color-adelaide-950: oklch(0.152 0.012 319.49);
 }
 
+@theme {
+  --color-blossom-100: oklch(0.95 0.025 55);
+  --color-blossom-200: oklch(0.91 0.045 52);
+  --color-blossom-300: oklch(0.85 0.075 50);
+  --color-blossom-400: oklch(0.79 0.105 48);
+  --color-blossom-500: oklch(0.72 0.12  45);
+  --color-blossom-600: oklch(0.62 0.115 42);
+  --color-blossom-700: oklch(0.50 0.095 40);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -190,4 +200,38 @@
 
 @utility shadow-mauve-lg {
   box-shadow: 0 24px 48px oklch(0.195 0.021 318.66 / 0.12);
+}
+
+/* Grain noise overlay — applied via .grain class on any element */
+@utility grain {
+  position: relative;
+  isolation: isolate;
+}
+@utility grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0, 0 0 0 0 0, 0 0 0 0 0, 0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+}
+
+/* CSS-only reveal animation for sections (used in addition to or instead of framer-motion) */
+@utility reveal-up {
+  animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
