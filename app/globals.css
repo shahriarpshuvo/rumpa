@@ -207,7 +207,8 @@
   position: relative;
   isolation: isolate;
 }
-@utility grain::after {
+
+.grain::after {
   content: "";
   position: absolute;
   inset: 0;
