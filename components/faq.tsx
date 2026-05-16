@@ -11,13 +11,13 @@ import {
 
 export function FAQ() {
   return (
-    <section id="faq" className="px-4 sm:px-6 py-20 sm:py-24">
+    <section id="faq" className="px-4 sm:px-6 py-24 sm:py-32 bg-adelaide-100/40">
       <div className="mx-auto max-w-5xl">
-        <div className="text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.22em] text-adelaide-500">
-            FAQ
+        <div className="text-center mb-14">
+          <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-600">
+            § 07 — FAQ
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.05] tracking-tight text-foreground">
+          <h2 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight text-foreground">
             Questions <Em>worth asking.</Em>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm sm:text-base text-muted-foreground">
@@ -25,15 +25,20 @@ export function FAQ() {
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {DATA.faqs.map((f, i) => (
             <Accordion key={i}>
               <AccordionItem
                 value={`item-${i}`}
-                className="rounded-2xl bg-secondary border-0 px-6 data-[panel-open]:bg-card data-[panel-open]:shadow-mauve transition-all"
+                className="rounded-2xl bg-card border-0 px-6 ring-1 ring-adelaide-200 data-[panel-open]:bg-card data-[panel-open]:shadow-mauve-lg data-[panel-open]:ring-blossom-400 transition-all"
               >
-                <AccordionTrigger className="text-left text-base sm:text-lg font-semibold py-5 hover:no-underline">
-                  {f.question}
+                <AccordionTrigger className="text-left text-base sm:text-lg font-bold py-5 hover:no-underline">
+                  <span className="flex items-baseline gap-3">
+                    <span className="font-display italic font-bold text-blossom-600 text-sm shrink-0">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span>{f.question}</span>
+                  </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed pb-5">
                   {f.answer}
