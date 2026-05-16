@@ -1,17 +1,19 @@
 import { Hero } from "@/components/hero";
-import { About } from "@/components/about";
+import { MeetDoctor } from "@/components/meet-doctor";
 import { Services } from "@/components/services";
+import { Insights } from "@/components/insights";
+import { HowItWorks } from "@/components/how-it-works";
 import { Testimonials } from "@/components/testimonials";
-import { Booking } from "@/components/booking";
-import { Qualifications } from "@/components/qualifications";
-import { Academics } from "@/components/academics";
-import { BlogPreview } from "@/components/blog-preview";
+import { Credentials } from "@/components/credentials";
+import { FAQ } from "@/components/faq";
+import { FinalCTA } from "@/components/final-cta";
 import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
 import { DATA } from "@/data/resume";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://drrezwanarumpa.com";
 
-const jsonLd = {
+const physicianJsonLd = {
   "@context": "https://schema.org",
   "@type": "Physician",
   name: DATA.name,
@@ -32,25 +34,41 @@ const jsonLd = {
   sameAs: [DATA.contact.linkedin, DATA.contact.facebook],
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: DATA.faqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.answer,
+    },
+  })),
+};
+
 export default function Home() {
   return (
     <main className="relative">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero />
-      <About />
+      <MeetDoctor />
       <Services />
+      <Insights />
+      <HowItWorks />
       <Testimonials />
-      <Booking />
-      <Qualifications />
-      <Academics />
-      <BlogPreview />
+      <Credentials />
+      <FAQ />
+      <FinalCTA />
       <Contact />
-
-      <footer className="border-t border-border/50 py-8 text-center">
-        <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Dr. Rezwana Rumpa. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </main>
   );
 }
