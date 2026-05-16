@@ -57,21 +57,25 @@ export const DATA = {
   testimonials: [
     {
       name: "Fatima R.",
+      role: "PCOS Patient · Now mother",
       text: "After struggling with PCOS for years, Dr. Rumpa helped me understand my condition and created a treatment plan that worked. Within 6 months, we received the best news of our lives. She truly cares about her patients.",
       rating: 5,
     },
     {
       name: "Nusrat & Tanvir",
+      role: "TTC Couple · Conceived 2025",
       text: "We had been trying to conceive for over two years. Dr. Rumpa's thorough assessment identified the issue quickly, and her compassionate approach made the entire journey bearable. We are forever grateful.",
       rating: 5,
     },
     {
       name: "Sharmin A.",
+      role: "PCOS Patient",
       text: "Dr. Rumpa doesn't just treat you medically — she supports you emotionally too. Her knowledge of PCOS is exceptional, and she explains everything in a way that's easy to understand. Highly recommended!",
       rating: 5,
     },
     {
       name: "Taslima & Rafiq",
+      role: "Fertility Treatment Couple",
       text: "From our first consultation, we felt hopeful. Dr. Rumpa's personalized approach and constant monitoring made all the difference. She celebrated every milestone with us as if it were her own.",
       rating: 5,
     },
@@ -159,5 +163,47 @@ export const DATA = {
     { label: "Happy Families", value: "500+" },
     { label: "Success Rate", value: "85%" },
     { label: "Research Papers", value: "15+" },
+  ],
+  faqs: [
+    {
+      question: "What does the first consultation involve?",
+      answer:
+        "Your first visit is a 45–60 minute conversation. We'll review your medical and reproductive history, discuss your goals, and outline next-step investigations — typically hormonal blood tests and a transvaginal ultrasound. No procedures happen on day one unless you're already prepared.",
+    },
+    {
+      question: "How long does PCOS treatment usually take?",
+      answer:
+        "PCOS management is ongoing rather than a fixed course. Most patients see meaningful symptom improvement within 3–6 months once a personalized plan (medication, lifestyle, and monitoring) is in place. For couples trying to conceive, ovulation often returns within 1–3 treatment cycles.",
+    },
+    {
+      question: "Do you offer IVF? Or only initial fertility care?",
+      answer:
+        "My practice focuses on diagnosis, ovulation induction, timed intercourse, and IUI prep. For cases that need IVF, I work closely with trusted IVF centers in Dhaka — your records, plan, and monitoring stay continuous so the handover is seamless.",
+    },
+    {
+      question: "What should I expect to spend?",
+      answer:
+        "Consultation fees are transparent and shared at booking. Treatment costs depend on the plan (medications, ultrasound monitoring, lab tests). I'll always discuss costs upfront before any new investigation or prescription so there are no surprises.",
+    },
+    {
+      question: "How soon can I start trying after a treatment plan?",
+      answer:
+        "For ovulation-induction cycles, we usually begin in the next menstrual cycle after baseline tests are clear. For preconception optimization, I recommend 2–3 months of preparation before active TTC to give your body the best foundation.",
+    },
+    {
+      question: "Do you see male partners too?",
+      answer:
+        "Yes. Fertility is a two-person problem — male-factor contributes to roughly 40% of cases. I evaluate both partners and refer for semen analysis at your first or second visit. Partners are encouraged at every consultation.",
+    },
+    {
+      question: "What if treatment doesn't work the first cycle?",
+      answer:
+        "Most fertility treatments need 3–6 cycles to fairly evaluate. After each cycle we review what worked, adjust dosing or approach, and update the plan together. The path is iterative, not linear.",
+    },
+    {
+      question: "Can I book virtually if I'm outside Dhaka?",
+      answer:
+        "Yes — initial consultations and follow-ups can be conducted online via secure video. In-person visits are needed for ultrasound monitoring and certain procedures, but much of the journey can be supported remotely.",
+    },
   ],
 } as const;
