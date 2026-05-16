@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarHeart, MessageCircle, Sparkles } from "lucide-react";
+import { CalTrigger } from "@/components/cal-trigger";
 import { DATA } from "@/data/resume";
 import { Em } from "@/components/ui/em";
 
@@ -38,15 +39,12 @@ export function FinalCTA() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <Link
-              href={DATA.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalTrigger
               className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-blossom-300 text-adelaide-950 text-base font-bold hover:bg-blossom-200 transition-all hover:-translate-y-0.5 shadow-mauve-lg"
             >
               <CalendarHeart className="size-5" />
               Book Consultation
-            </Link>
+            </CalTrigger>
             <Link
               href="#contact"
               className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full border border-adelaide-300/40 text-adelaide-100 text-sm font-medium hover:bg-adelaide-800 transition-colors"

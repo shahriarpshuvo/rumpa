@@ -5,6 +5,7 @@ import { CalendarHeart, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
+import { CalTrigger } from "@/components/cal-trigger";
 import { Em } from "@/components/ui/em";
 import { StickerBadge } from "@/components/ui/sticker-badge";
 
@@ -111,15 +112,12 @@ export function Hero() {
             </p>
           </div>
           <div className="flex flex-col gap-2.5 lg:items-end">
-            <Link
-              href={DATA.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalTrigger
               className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-all shadow-mauve hover:-translate-y-0.5"
             >
               <CalendarHeart className="size-4" />
               Book Consultation
-            </Link>
+            </CalTrigger>
             <Link
               href="#services"
               className="inline-flex items-center justify-center gap-2 h-11 px-5 rounded-full bg-blossom-300 text-adelaide-950 text-sm font-semibold hover:bg-blossom-400 transition-colors"
