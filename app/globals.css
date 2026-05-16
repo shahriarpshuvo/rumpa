@@ -22,7 +22,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: "Google Sans", var(--font-sans), system-ui, sans-serif;
   --font-mono: var(--font-mono);
   --font-heading: var(--font-display);
   --font-display: var(--font-display);
