@@ -1,72 +1,84 @@
+"use client";
+
+import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Em } from "@/components/ui/em";
+
+const CARDS = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: DATA.contact.email,
+    href: `mailto:${DATA.contact.email}`,
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: DATA.contact.phone,
+    href: `tel:${DATA.contact.phone.replace(/[^+\d]/g, "")}`,
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: DATA.location,
+    href: `https://maps.google.com/?q=${encodeURIComponent(DATA.location)}`,
+  },
+];
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
-      <div className="mx-auto max-w-4xl px-6">
-        <div className="text-center mb-10">
-          <span className="inline-block text-sm font-semibold text-primary tracking-widest uppercase">
-            Contact
+    <section id="contact" className="px-4 sm:px-6 py-20 sm:py-24">
+      <div className="mx-auto max-w-5xl">
+        <div className="text-center">
+          <span className="text-xs font-semibold uppercase tracking-[0.22em] text-adelaide-500">
+            Get in touch
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-3">
-            Get in <span className="text-primary">Touch</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.05] tracking-tight text-foreground">
+            Reach out — I&apos;m <Em>here to listen.</Em>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-card rounded-2xl p-6 border border-border/50 text-center hover:shadow-md hover:border-primary/20 transition-all">
-            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-              <Mail className="size-5 text-primary" />
-            </div>
-            <h3 className="font-semibold text-sm mb-1">Email</h3>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+          {CARDS.map(({ icon: Icon, label, value, href }) => (
             <Link
-              href={`mailto:${DATA.contact.email}`}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors underline underline-offset-4"
+              key={label}
+              href={href}
+              target={href.startsWith("http") ? "_blank" : undefined}
+              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="rounded-2xl bg-card p-6 shadow-mauve hover:-translate-y-1 hover:shadow-mauve-lg transition-all"
             >
-              {DATA.contact.email}
+              <div className="size-11 rounded-xl bg-secondary flex items-center justify-center">
+                <Icon className="size-5 text-adelaide-700" />
+              </div>
+              <div className="mt-4 text-xs uppercase tracking-wider text-adelaide-500 font-semibold">
+                {label}
+              </div>
+              <div className="mt-1 text-sm sm:text-base font-medium text-foreground break-words">
+                {value}
+              </div>
             </Link>
-          </div>
-
-          <div className="bg-card rounded-2xl p-6 border border-border/50 text-center hover:shadow-md hover:border-primary/20 transition-all">
-            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-              <Phone className="size-5 text-primary" />
-            </div>
-            <h3 className="font-semibold text-sm mb-1">Phone</h3>
-            <Link
-              href={`tel:${DATA.contact.phone}`}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors underline underline-offset-4"
-            >
-              {DATA.contact.phone}
-            </Link>
-          </div>
-
-          <div className="bg-card rounded-2xl p-6 border border-border/50 text-center hover:shadow-md hover:border-primary/20 transition-all">
-            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-              <MapPin className="size-5 text-primary" />
-            </div>
-            <h3 className="font-semibold text-sm mb-1">Location</h3>
-            <p className="text-sm text-muted-foreground">{DATA.location}</p>
-          </div>
+          ))}
         </div>
 
-        <div className="text-center mt-8 space-x-4">
+        <div className="mt-10 flex items-center justify-center gap-3">
           <Link
             href={DATA.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-primary hover:text-primary/80 transition-colors underline underline-offset-4"
+            aria-label="LinkedIn"
+            className="size-11 rounded-full border border-adelaide-300 flex items-center justify-center text-adelaide-700 hover:bg-secondary transition-colors"
           >
-            LinkedIn
+            <Linkedin className="size-4" />
           </Link>
           <Link
             href={DATA.contact.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-primary hover:text-primary/80 transition-colors underline underline-offset-4"
+            aria-label="Facebook"
+            className="size-11 rounded-full border border-adelaide-300 flex items-center justify-center text-adelaide-700 hover:bg-secondary transition-colors"
           >
-            Facebook
+            <Facebook className="size-4" />
           </Link>
         </div>
       </div>
