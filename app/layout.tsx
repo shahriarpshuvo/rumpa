@@ -3,7 +3,7 @@ import { Lora, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Dock } from "@/components/dock";
+import { Header } from "@/components/header";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -120,8 +120,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <ThemeProvider>
+          <Header />
           {children}
-          <Dock />
         </ThemeProvider>
       </body>
     </html>
