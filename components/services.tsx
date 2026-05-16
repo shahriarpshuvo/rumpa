@@ -19,46 +19,60 @@ const ICONS = [Heart, Stethoscope, Activity, Baby, ClipboardList, ShieldCheck];
 export function Services() {
   return (
     <section id="services" className="px-4 sm:px-6 py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl rounded-[28px] bg-adelaide-900 text-adelaide-100 px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+      <div className="relative mx-auto max-w-7xl rounded-[28px] bg-adelaide-950 text-adelaide-100 px-6 py-14 sm:px-10 sm:py-16 lg:px-14 lg:py-20 overflow-hidden grain">
+        {/* huge ghost number */}
+        <span
+          aria-hidden="true"
+          className="absolute -top-10 -right-6 sm:-top-16 sm:-right-10 font-display italic font-bold text-[280px] sm:text-[400px] leading-none text-adelaide-100/[0.04] select-none pointer-events-none"
+        >
+          02
+        </span>
+
+        <div className="relative flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <span className="block text-xs font-semibold uppercase tracking-[0.22em] text-adelaide-300">
-              Services
+            <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-300">
+              § 02 — Services
             </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight">
-              How I can <Em className="text-adelaide-200">help you</Em>
+            <h2 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight">
+              How I can
+              <br />
+              <Em className="text-blossom-300">help you.</Em>
             </h2>
-            <p className="mt-4 text-sm sm:text-base text-adelaide-300/90 leading-relaxed">
-              Comprehensive fertility care tailored to your unique journey.
+            <p className="mt-4 text-sm sm:text-base text-adelaide-300 leading-relaxed max-w-lg">
+              Comprehensive fertility care tailored to your unique journey — diagnosis through delivery.
             </p>
           </div>
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-adelaide-800 text-adelaide-100 text-sm font-semibold hover:bg-adelaide-700 transition-colors self-start lg:self-auto"
+            className="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-blossom-300 text-adelaide-950 text-sm font-bold hover:bg-blossom-400 transition-colors self-start lg:self-auto"
           >
-            See all →
+            Ask anything →
           </Link>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="relative mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {DATA.services.map((service, i) => {
             const Icon = ICONS[i % ICONS.length];
             return (
               <motion.div
                 key={service.name}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="rounded-2xl bg-adelaide-800/80 p-6 hover:bg-adelaide-800 transition-colors"
+                initial={{ opacity: 0.6, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.05 }}
+                className="group relative rounded-2xl bg-adelaide-900 ring-1 ring-adelaide-800 p-6 hover:ring-blossom-400 hover:bg-adelaide-800 transition-all"
               >
-                <div className="size-11 rounded-xl bg-adelaide-700/60 flex items-center justify-center mb-4">
-                  <Icon className="size-5 text-adelaide-200" />
+                <div className="flex items-start justify-between mb-4">
+                  <div className="size-12 rounded-xl bg-blossom-300/15 ring-1 ring-blossom-300/30 flex items-center justify-center">
+                    <Icon className="size-5 text-blossom-300" />
+                  </div>
+                  <span className="font-display italic font-bold text-2xl text-adelaide-700 group-hover:text-blossom-400 transition-colors">
+                    .0{i + 1}
+                  </span>
                 </div>
-                <h3 className="text-lg font-semibold leading-snug">
+                <h3 className="text-lg font-bold leading-snug text-adelaide-100">
                   {service.name}
                 </h3>
-                <p className="mt-2 text-sm text-adelaide-300/80 leading-relaxed">
+                <p className="mt-2 text-sm text-adelaide-300 leading-relaxed">
                   {service.description}
                 </p>
               </motion.div>
@@ -66,8 +80,9 @@ export function Services() {
           })}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-4 items-stretch">
-          <div className="relative aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden">
+        {/* quote cell */}
+        <div className="relative mt-10 grid grid-cols-1 lg:grid-cols-[0.9fr_1.4fr] gap-4">
+          <div className="relative aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden ring-1 ring-adelaide-800">
             <Image
               src="/img/prescribing.png"
               alt="Dr. Rumpa at her desk reviewing patient records"
@@ -76,12 +91,13 @@ export function Services() {
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </div>
-          <div className="rounded-2xl bg-adelaide-800/50 p-8 flex flex-col justify-center">
-            <p className="text-lg sm:text-xl font-display italic font-medium text-adelaide-100 leading-relaxed">
-              &ldquo;Every patient is unique. The plan should be too.&rdquo;
+          <div className="rounded-2xl bg-adelaide-900 ring-1 ring-adelaide-800 p-8 sm:p-10 flex flex-col justify-center">
+            <span className="text-blossom-300 text-4xl font-display italic leading-none">&ldquo;</span>
+            <p className="mt-2 text-xl sm:text-2xl font-display italic font-medium text-adelaide-100 leading-snug">
+              Every patient is unique. The plan should be too.
             </p>
-            <p className="mt-4 text-sm text-adelaide-300">
-              — Dr. Rezwana Rumpa
+            <p className="mt-5 text-xs uppercase tracking-[0.25em] text-blossom-300 font-semibold">
+              — Dr. Rezwana Rumpa, Fertility Specialist
             </p>
           </div>
         </div>
