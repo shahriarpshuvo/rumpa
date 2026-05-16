@@ -19,7 +19,7 @@ function Initials({ name }: { name: string }) {
     .slice(0, 2)
     .join("");
   return (
-    <div className="size-10 shrink-0 rounded-full bg-gradient-to-br from-adelaide-300 to-adelaide-500 text-adelaide-50 font-bold text-sm flex items-center justify-center">
+    <div className="size-11 shrink-0 rounded-full bg-gradient-to-br from-blossom-300 to-adelaide-500 text-adelaide-50 font-display italic font-bold text-base flex items-center justify-center ring-2 ring-card">
       {letters}
     </div>
   );
@@ -27,52 +27,63 @@ function Initials({ name }: { name: string }) {
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="px-4 sm:px-6 py-20 sm:py-24">
+    <section id="testimonials" className="px-4 sm:px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.22em] text-adelaide-500">
-            Real stories
+        {/* giant pull quote */}
+        <motion.div
+          initial={{ opacity: 0.7 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto text-center mb-16"
+        >
+          <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-600">
+            § 05 — Real stories
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.05] tracking-tight text-foreground">
-            Trusted by <Em>500+ families.</Em>
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm sm:text-base text-muted-foreground">
-            A few voices from couples I&apos;ve had the privilege to support.
+          <p className="mt-4 font-display italic text-3xl sm:text-5xl lg:text-6xl font-medium leading-[1.05] text-foreground tracking-tight">
+            &ldquo;She didn&apos;t just treat me — <br className="hidden sm:block" /> she <span className="text-blossom-600">walked beside us.</span>&rdquo;
           </p>
-        </div>
+          <p className="mt-6 text-sm uppercase tracking-[0.25em] text-muted-foreground font-semibold">
+            Trusted by 500+ families across Bangladesh
+          </p>
+        </motion.div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {DATA.testimonials.map((t, i) => {
             const { lead, rest } = pickEmphasis(t.text);
+            const accent = i % 2 === 0;
             return (
               <motion.figure
                 key={t.name}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.45, delay: i * 0.08 }}
-                className="rounded-3xl bg-card p-7 shadow-mauve"
+                initial={{ opacity: 0.6, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: i * 0.06 }}
+                className={`relative rounded-3xl p-7 sm:p-9 shadow-mauve ${
+                  accent ? "bg-card ring-1 ring-adelaide-200" : "bg-adelaide-100"
+                }`}
               >
-                <div className="flex items-center gap-1">
-                  {Array.from({ length: t.rating }).map((_, idx) => (
-                    <Star
-                      key={idx}
-                      className="size-4 fill-adelaide-500 text-adelaide-500"
-                    />
-                  ))}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-0.5">
+                    {Array.from({ length: t.rating }).map((_, idx) => (
+                      <Star
+                        key={idx}
+                        className="size-4 fill-blossom-500 text-blossom-500"
+                      />
+                    ))}
+                  </div>
+                  <span className="font-display italic text-2xl text-blossom-500 leading-none">&ldquo;</span>
                 </div>
-                <blockquote className="mt-4 text-base text-foreground leading-relaxed">
-                  {lead && <Em>{`"${lead.replace(/[,.]$/, "")}"`}</Em>}
-                  {lead && " "}
+                <blockquote className="mt-4 text-base sm:text-lg text-foreground leading-relaxed">
+                  {lead && <Em>{lead.replace(/[,.]$/, "")}</Em>}
+                  {lead && rest && <span>{lead.endsWith(",") ? "," : "."} </span>}
                   {rest}
                 </blockquote>
-                <figcaption className="mt-6 flex items-center gap-3">
+                <figcaption className="mt-6 flex items-center gap-3 pt-5 border-t border-adelaide-200/60">
                   <Initials name={t.name} />
                   <div>
-                    <div className="font-semibold text-foreground text-sm">
+                    <div className="font-bold text-foreground text-sm">
                       {t.name}
                     </div>
-                    <div className="text-xs text-muted-foreground">
+                    <div className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground font-semibold">
                       {t.role}
                     </div>
                   </div>
