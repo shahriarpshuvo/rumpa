@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarHeart, MessageCircle } from "lucide-react";
+import { CalendarHeart, MessageCircle, Sparkles } from "lucide-react";
 import { DATA } from "@/data/resume";
 import { Em } from "@/components/ui/em";
 
@@ -11,21 +11,27 @@ export function FinalCTA() {
   return (
     <section className="px-4 sm:px-6 py-20 sm:py-24">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        initial={{ opacity: 0.7, y: 6 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-adelaide-900 text-adelaide-100 px-6 py-14 sm:px-12 sm:py-16 lg:px-16 lg:py-20"
+        className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-adelaide-950 text-adelaide-100 px-6 py-16 sm:px-12 sm:py-20 lg:px-16 lg:py-24 grain"
       >
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-10 items-center">
+        {/* ghost asterisks */}
+        <div aria-hidden="true" className="absolute top-8 left-1/2 -translate-x-1/2 text-3xl text-blossom-300/50 tracking-[0.5em]">
+          ✦ ✦ ✦
+        </div>
+
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-12 items-center mt-6">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.22em] text-adelaide-300">
-              Take the next step
+            <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-300">
+              ★ Take the next step
             </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.05] tracking-tight">
-              Ready to <Em className="text-adelaide-200">start your journey?</Em>
+            <h2 className="mt-4 text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[0.98] tracking-tight">
+              Ready to
+              <br />
+              <Em className="text-blossom-300">start your journey?</Em>
             </h2>
-            <p className="mt-4 max-w-xl text-sm sm:text-base text-adelaide-300/90 leading-relaxed">
+            <p className="mt-6 max-w-xl text-base sm:text-lg text-adelaide-300 leading-relaxed">
               First consultations book within a week. Whether you&apos;re early in
               the journey or have been trying for years, the next step is a
               conversation.
@@ -36,9 +42,9 @@ export function FinalCTA() {
               href={DATA.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-adelaide-100 text-adelaide-900 text-sm font-semibold hover:bg-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-blossom-300 text-adelaide-950 text-base font-bold hover:bg-blossom-200 transition-all hover:-translate-y-0.5 shadow-mauve-lg"
             >
-              <CalendarHeart className="size-4" />
+              <CalendarHeart className="size-5" />
               Book Consultation
             </Link>
             <Link
@@ -50,22 +56,22 @@ export function FinalCTA() {
             </Link>
             <Link
               href={`tel:${DATA.contact.phone.replace(/[^+\d]/g, "")}`}
-              className="text-center text-sm text-adelaide-300 hover:text-adelaide-100 transition-colors mt-2"
+              className="text-center text-sm text-adelaide-300 hover:text-blossom-300 transition-colors mt-2 underline underline-offset-4 decoration-adelaide-700"
             >
               or call {DATA.contact.phone}
             </Link>
           </div>
         </div>
 
-        <div className="hidden lg:block absolute -right-12 -top-8 w-[340px] h-[120%] opacity-25 pointer-events-none">
+        <div className="hidden lg:block absolute -right-16 -top-8 w-[420px] h-[120%] opacity-25 pointer-events-none">
           <Image
             src="/img/assuring.png"
             alt=""
             fill
             className="object-cover object-left"
-            sizes="340px"
+            sizes="420px"
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-adelaide-900" />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-adelaide-950" />
         </div>
       </motion.div>
     </section>
