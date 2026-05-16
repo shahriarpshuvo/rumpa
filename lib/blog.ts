@@ -4,19 +4,27 @@ import matter from "gray-matter";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
 
-export interface BlogPost {
-  slug: string;
-  title: string;
-  date: string;
-  description: string;
-  content: string;
+function calcReadTime(content: string): number {
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 220));
 }
+
+export type BlogCategory = "PCOS" | "Treatment" | "Preconception" | "Fertility";
 
 export interface BlogPostMeta {
   slug: string;
   title: string;
   date: string;
   description: string;
+  coverImage?: string;
+  category?: BlogCategory;
+  readTime?: number;
+  featured?: boolean;
+  emphasisWords?: string[];
+}
+
+export interface BlogPost extends BlogPostMeta {
+  content: string;
 }
 
 export function getAllPosts(): BlogPostMeta[] {
@@ -28,13 +36,18 @@ export function getAllPosts(): BlogPostMeta[] {
     const slug = filename.replace(/\.mdx$/, "");
     const filePath = path.join(BLOG_DIR, filename);
     const fileContent = fs.readFileSync(filePath, "utf-8");
-    const { data } = matter(fileContent);
+    const { data, content } = matter(fileContent);
 
     return {
       slug,
       title: data.title ?? slug,
       date: data.date ?? "",
       description: data.description ?? "",
+      coverImage: data.coverImage,
+      category: data.category as BlogCategory | undefined,
+      readTime: data.readTime ?? calcReadTime(content),
+      featured: data.featured ?? false,
+      emphasisWords: data.emphasisWords,
     };
   });
 
@@ -68,6 +81,11 @@ export function getPostBySlug(slug: string): BlogPost | null {
     title: data.title ?? slug,
     date: data.date ?? "",
     description: data.description ?? "",
+    coverImage: data.coverImage,
+    category: data.category as BlogCategory | undefined,
+    readTime: data.readTime ?? calcReadTime(content),
+    featured: data.featured ?? false,
+    emphasisWords: data.emphasisWords,
     content,
   };
 }
