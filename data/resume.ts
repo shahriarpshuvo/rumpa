@@ -1,0 +1,163 @@
+export const DATA = {
+  name: "Dr. Rezwana Rumpa",
+  initials: "RR",
+  title: "Fertility & PCOS Specialist",
+  location: "Dhaka, Bangladesh",
+  summary:
+    "Board-certified fertility specialist dedicated to helping couples on their journey to parenthood. Expert in PCOS management, ovulation induction, and personalized fertility care with a compassionate, evidence-based approach.",
+  avatarUrl: "/rumpa.png",
+  tagline: "Helping you build the family you dream of",
+  contact: {
+    email: "dr.rezwana@example.com",
+    phone: "+880-1XXX-XXXXXX",
+    linkedin: "https://linkedin.com/in/drrezwanarumpa",
+    facebook: "https://facebook.com/drrezwanarumpa",
+  },
+  bookingUrl: "https://calendly.com/dr-rezwana-rumpa",
+  about:
+    "I am a passionate fertility specialist with extensive experience in reproductive medicine. My practice focuses on helping couples navigate the challenges of trying to conceive (TTC), with particular expertise in Polycystic Ovary Syndrome (PCOS), ovulation disorders, and personalized fertility treatment plans. I believe in a holistic, patient-centered approach that combines the latest medical advances with genuine compassion and emotional support.",
+  services: [
+    {
+      name: "PCOS Management & Treatment",
+      description:
+        "Comprehensive diagnosis and personalized treatment plans for Polycystic Ovary Syndrome, including lifestyle modification guidance, hormonal therapy, and ovulation induction to restore regular cycles and improve fertility.",
+      icon: "heart",
+    },
+    {
+      name: "Fertility Consultation & Assessment",
+      description:
+        "Thorough fertility evaluations for both partners including hormonal profiling, ultrasound assessment, ovarian reserve testing, and personalized treatment roadmap to optimize your chances of conception.",
+      icon: "stethoscope",
+    },
+    {
+      name: "Ovulation Induction & Monitoring",
+      description:
+        "Carefully monitored ovulation stimulation with oral medications or injectables, combined with follicular tracking ultrasound to time interventions for the best possible outcome each cycle.",
+      icon: "activity",
+    },
+    {
+      name: "TTC (Trying to Conceive) Support",
+      description:
+        "Guided support for couples trying to conceive, including cycle tracking education, timed intercourse counseling, preconception health optimization, and emotional support throughout your fertility journey.",
+      icon: "baby",
+    },
+    {
+      name: "Reproductive Endocrinology",
+      description:
+        "Expert management of hormonal disorders affecting fertility including thyroid conditions, hyperprolactinemia, endometriosis, and recurrent pregnancy loss evaluation and treatment.",
+      icon: "clipboard",
+    },
+    {
+      name: "Preconception Counseling",
+      description:
+        "Proactive health assessment and optimization before trying to conceive, including genetic screening, nutrition guidance, supplement recommendations, and lifestyle modifications for both partners.",
+      icon: "shield",
+    },
+  ],
+  testimonials: [
+    {
+      name: "Fatima R.",
+      text: "After struggling with PCOS for years, Dr. Rumpa helped me understand my condition and created a treatment plan that worked. Within 6 months, we received the best news of our lives. She truly cares about her patients.",
+      rating: 5,
+    },
+    {
+      name: "Nusrat & Tanvir",
+      text: "We had been trying to conceive for over two years. Dr. Rumpa's thorough assessment identified the issue quickly, and her compassionate approach made the entire journey bearable. We are forever grateful.",
+      rating: 5,
+    },
+    {
+      name: "Sharmin A.",
+      text: "Dr. Rumpa doesn't just treat you medically — she supports you emotionally too. Her knowledge of PCOS is exceptional, and she explains everything in a way that's easy to understand. Highly recommended!",
+      rating: 5,
+    },
+    {
+      name: "Taslima & Rafiq",
+      text: "From our first consultation, we felt hopeful. Dr. Rumpa's personalized approach and constant monitoring made all the difference. She celebrated every milestone with us as if it were her own.",
+      rating: 5,
+    },
+  ],
+  qualifications: [
+    {
+      degree: "MBBS",
+      institution: "Dhaka Medical College",
+      year: "2012",
+      description: "Graduated with honors in Obstetrics & Gynecology",
+    },
+    {
+      degree: "FCPS (Gynecology & Obstetrics)",
+      institution: "Bangladesh College of Physicians and Surgeons",
+      year: "2017",
+      description: "Fellowship specializing in reproductive medicine",
+    },
+    {
+      degree: "MS in Reproductive Medicine",
+      institution: "University of Dhaka",
+      year: "2020",
+      description: "Advanced training in fertility treatments and PCOS management",
+    },
+  ],
+  academics: [
+    {
+      title: "Novel Approaches in PCOS-Related Infertility Management",
+      role: "Lead Researcher",
+      year: "2024",
+      description:
+        "Published research on improved ovulation induction protocols for PCOS patients with insulin resistance.",
+    },
+    {
+      title: "Preconception Care Guidelines for Bangladeshi Women",
+      role: "Co-Author",
+      year: "2023",
+      description:
+        "Contributed to national guidelines for preconception health optimization in the Bangladeshi context.",
+    },
+    {
+      title: "Recurrent Pregnancy Loss: A Comprehensive Review",
+      role: "Author",
+      year: "2022",
+      description:
+        "Systematic review of causes and management strategies for recurrent early pregnancy loss.",
+    },
+  ],
+  experience: [
+    {
+      position: "Consultant Fertility Specialist",
+      hospital: "National Fertility & IVF Center",
+      start: "2021",
+      end: "Present",
+      description: [
+        "Leading fertility consultations and treatment plans for couples with complex infertility cases",
+        "Specializing in PCOS management, ovulation induction, and minimally invasive fertility procedures",
+        "Managing over 500+ successful conception cases with a patient-centered approach",
+      ],
+    },
+    {
+      position: "Senior Registrar, Obstetrics & Gynecology",
+      hospital: "Dhaka Medical College Hospital",
+      start: "2017",
+      end: "2021",
+      description: [
+        "Managed high-risk pregnancies and gynecological emergencies in one of Bangladesh's busiest hospitals",
+        "Conducted reproductive health camps in rural areas reaching 1000+ underserved women",
+        "Trained junior doctors in fertility assessment and ultrasound-guided procedures",
+      ],
+    },
+    {
+      position: "Resident Medical Officer",
+      hospital: "Square Hospital Ltd.",
+      start: "2013",
+      end: "2017",
+      description: [
+        "Provided comprehensive obstetric and gynecological care under senior consultants",
+        "Assisted in complex gynecological surgeries and cesarean sections",
+        "Developed strong foundational skills in reproductive medicine and patient communication",
+      ],
+    },
+  ],
+  stats: [
+    { label: "Years Experience", value: "12+" },
+    { label: "Happy Families", value: "500+" },
+    { label: "Success Rate", value: "85%" },
+    { label: "Research Papers", value: "15+" },
+  ],
+} as const;
