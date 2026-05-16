@@ -5,12 +5,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-adelaide-50:  oklch(0.959 0.007 312.56);
+  --color-adelaide-100: oklch(0.907 0.017 317.04);
+  --color-adelaide-200: oklch(0.814 0.035 315.24);
+  --color-adelaide-300: oklch(0.717 0.054 315.67);
+  --color-adelaide-400: oklch(0.62  0.073 314.88);
+  --color-adelaide-500: oklch(0.527 0.078 315.03);
+  --color-adelaide-600: oklch(0.45  0.065 315.28);
+  --color-adelaide-700: oklch(0.369 0.051 315.68);
+  --color-adelaide-800: oklch(0.286 0.036 314.22);
+  --color-adelaide-900: oklch(0.195 0.021 318.66);
+  --color-adelaide-950: oklch(0.152 0.012 319.49);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
-  --font-heading: var(--font-heading);
+  --font-heading: var(--font-display);
+  --font-display: var(--font-display);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,72 +65,72 @@
 }
 
 :root {
-  --background: oklch(0.97 0.008 75);
-  --foreground: oklch(0.16 0.03 30);
-  --card: oklch(0.995 0.003 75);
-  --card-foreground: oklch(0.16 0.03 30);
-  --popover: oklch(0.995 0.003 75);
-  --popover-foreground: oklch(0.16 0.03 30);
-  --primary: oklch(0.50 0.16 18);
-  --primary-foreground: oklch(0.98 0.008 75);
-  --secondary: oklch(0.93 0.025 60);
-  --secondary-foreground: oklch(0.22 0.04 30);
-  --muted: oklch(0.94 0.018 60);
-  --muted-foreground: oklch(0.46 0.025 30);
-  --accent: oklch(0.91 0.05 50);
-  --accent-foreground: oklch(0.22 0.04 30);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.02 60);
-  --input: oklch(0.90 0.02 60);
-  --ring: oklch(0.50 0.16 18);
-  --chart-1: oklch(0.50 0.16 18);
-  --chart-2: oklch(0.60 0.14 30);
-  --chart-3: oklch(0.70 0.10 50);
-  --chart-4: oklch(0.55 0.10 350);
-  --chart-5: oklch(0.40 0.08 30);
-  --radius: 1rem;
-  --sidebar: oklch(0.96 0.012 60);
-  --sidebar-foreground: oklch(0.16 0.03 30);
-  --sidebar-primary: oklch(0.50 0.16 18);
-  --sidebar-primary-foreground: oklch(0.98 0.008 75);
-  --sidebar-accent: oklch(0.91 0.05 50);
-  --sidebar-accent-foreground: oklch(0.22 0.04 30);
-  --sidebar-border: oklch(0.90 0.02 60);
-  --sidebar-ring: oklch(0.50 0.16 18);
+  --background:           var(--color-adelaide-50);
+  --foreground:           var(--color-adelaide-950);
+  --card:                 oklch(1 0 0);
+  --card-foreground:      var(--color-adelaide-950);
+  --popover:              oklch(1 0 0);
+  --popover-foreground:   var(--color-adelaide-950);
+  --primary:              var(--color-adelaide-900);
+  --primary-foreground:   var(--color-adelaide-100);
+  --secondary:            var(--color-adelaide-100);
+  --secondary-foreground: var(--color-adelaide-800);
+  --muted:                var(--color-adelaide-100);
+  --muted-foreground:     var(--color-adelaide-600);
+  --accent:               var(--color-adelaide-200);
+  --accent-foreground:    var(--color-adelaide-800);
+  --destructive:          oklch(0.577 0.245 27.325);
+  --border:               var(--color-adelaide-200);
+  --input:                var(--color-adelaide-200);
+  --ring:                 var(--color-adelaide-500);
+  --chart-1: var(--color-adelaide-300);
+  --chart-2: var(--color-adelaide-500);
+  --chart-3: var(--color-adelaide-700);
+  --chart-4: var(--color-adelaide-900);
+  --chart-5: var(--color-adelaide-200);
+  --radius:  1rem;
+  --sidebar:                    var(--color-adelaide-100);
+  --sidebar-foreground:         var(--color-adelaide-950);
+  --sidebar-primary:            var(--color-adelaide-900);
+  --sidebar-primary-foreground: var(--color-adelaide-100);
+  --sidebar-accent:             var(--color-adelaide-200);
+  --sidebar-accent-foreground:  var(--color-adelaide-800);
+  --sidebar-border:             var(--color-adelaide-200);
+  --sidebar-ring:               var(--color-adelaide-500);
 }
 
 .dark {
-  --background: oklch(0.13 0.015 30);
-  --foreground: oklch(0.95 0.01 75);
-  --card: oklch(0.17 0.02 30);
-  --card-foreground: oklch(0.95 0.01 75);
-  --popover: oklch(0.17 0.02 30);
-  --popover-foreground: oklch(0.95 0.01 75);
-  --primary: oklch(0.62 0.18 18);
-  --primary-foreground: oklch(0.12 0.02 30);
-  --secondary: oklch(0.21 0.02 30);
-  --secondary-foreground: oklch(0.95 0.01 75);
-  --muted: oklch(0.21 0.015 30);
-  --muted-foreground: oklch(0.66 0.02 75);
-  --accent: oklch(0.21 0.03 30);
-  --accent-foreground: oklch(0.95 0.01 75);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.62 0.18 18);
-  --chart-1: oklch(0.62 0.18 18);
-  --chart-2: oklch(0.7 0.14 30);
-  --chart-3: oklch(0.6 0.10 50);
-  --chart-4: oklch(0.55 0.1 350);
-  --chart-5: oklch(0.45 0.08 30);
-  --sidebar: oklch(0.17 0.02 30);
-  --sidebar-foreground: oklch(0.95 0.01 75);
-  --sidebar-primary: oklch(0.62 0.18 18);
-  --sidebar-primary-foreground: oklch(0.12 0.02 30);
-  --sidebar-accent: oklch(0.21 0.03 30);
-  --sidebar-accent-foreground: oklch(0.95 0.01 75);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.62 0.18 18);
+  --background:           var(--color-adelaide-950);
+  --foreground:           var(--color-adelaide-50);
+  --card:                 var(--color-adelaide-900);
+  --card-foreground:      var(--color-adelaide-50);
+  --popover:              var(--color-adelaide-900);
+  --popover-foreground:   var(--color-adelaide-50);
+  --primary:              var(--color-adelaide-300);
+  --primary-foreground:   var(--color-adelaide-950);
+  --secondary:            var(--color-adelaide-800);
+  --secondary-foreground: var(--color-adelaide-100);
+  --muted:                var(--color-adelaide-800);
+  --muted-foreground:     var(--color-adelaide-300);
+  --accent:               var(--color-adelaide-800);
+  --accent-foreground:    var(--color-adelaide-100);
+  --destructive:          oklch(0.704 0.191 22.216);
+  --border:               oklch(1 0 0 / 10%);
+  --input:                oklch(1 0 0 / 15%);
+  --ring:                 var(--color-adelaide-300);
+  --chart-1: var(--color-adelaide-300);
+  --chart-2: var(--color-adelaide-500);
+  --chart-3: var(--color-adelaide-200);
+  --chart-4: var(--color-adelaide-100);
+  --chart-5: var(--color-adelaide-600);
+  --sidebar:                    var(--color-adelaide-900);
+  --sidebar-foreground:         var(--color-adelaide-50);
+  --sidebar-primary:            var(--color-adelaide-300);
+  --sidebar-primary-foreground: var(--color-adelaide-950);
+  --sidebar-accent:             var(--color-adelaide-800);
+  --sidebar-accent-foreground:  var(--color-adelaide-100);
+  --sidebar-border:             oklch(1 0 0 / 10%);
+  --sidebar-ring:               var(--color-adelaide-300);
 }
 
 @layer base {
@@ -167,4 +182,12 @@
     scrollbar-width: thin;
     scrollbar-color: #484f58 transparent;
   }
+}
+
+@utility shadow-mauve {
+  box-shadow: 0 12px 32px oklch(0.195 0.021 318.66 / 0.08);
+}
+
+@utility shadow-mauve-lg {
+  box-shadow: 0 24px 48px oklch(0.195 0.021 318.66 / 0.12);
 }
