@@ -16,7 +16,7 @@ export function Hero() {
         initial={{ opacity: 0.7, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-gradient-to-br from-adelaide-100 via-adelaide-200 to-adelaide-400 px-6 pt-12 sm:px-10 sm:pt-16 lg:px-14 lg:pt-20 grain"
+        className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-gradient-to-br from-adelaide-100 via-adelaide-200 to-adelaide-400 px-6 pt-12 sm:px-10 sm:pt-16 lg:px-14 lg:pt-20 grain mt-4"
       >
         {/* mega backdrop name */}
         <div
@@ -49,7 +49,7 @@ export function Hero() {
           </div>
           <div className="hidden sm:block" />
           <div className="text-sm sm:text-base font-medium leading-relaxed text-adelaide-900 sm:text-right">
-            MBBS (BD 🇧🇩)
+            MBBS <Em>(BD 🇧🇩)</Em>
             <br />
             MRCOG, Final Part <Em>(UK 🇬🇧)</Em>
             <br />
@@ -74,7 +74,7 @@ export function Hero() {
             </StickerBadge>
             <StickerBadge className="absolute bottom-20 pr-8 -left-6 sm:-left-12 bg-adelaide-950 text-blossom-200 rotate-3">
               <Baby className="size-3.5" />
-              500+ families helped
+              200+ TTC families helped
             </StickerBadge>
           </div>
         </div>

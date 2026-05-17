@@ -8,10 +8,9 @@ import { Testimonials } from "@/components/testimonials";
 import { Credentials } from "@/components/credentials";
 import { FAQ } from "@/components/faq";
 import { FinalCTA } from "@/components/final-cta";
-import { Footer } from "@/components/footer";
 import { DATA } from "@/data/resume";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://drrezwanarumpa.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://rumpa.uk";
 
 const physicianJsonLd = {
   "@context": "https://schema.org",
@@ -20,7 +19,6 @@ const physicianJsonLd = {
   description: DATA.summary,
   url: SITE_URL,
   email: DATA.contact.email,
-  telephone: DATA.contact.phone,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Dhaka",
@@ -31,7 +29,7 @@ const physicianJsonLd = {
     "Fertility Medicine",
     "PCOS Treatment",
   ],
-  sameAs: [DATA.contact.linkedin, DATA.contact.facebook],
+  sameAs: [DATA.contact.facebook, DATA.contact.instagram, DATA.contact.tiktok],
 };
 
 const faqJsonLd = {
@@ -68,7 +66,6 @@ export default function Home() {
       <Credentials />
       <FAQ />
       <FinalCTA />
-      <Footer />
     </main>
   );
 }

@@ -23,7 +23,7 @@ function BlogCard({ post, index }: { post: BlogPostMeta; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.3,
-        delay: (index % 9) * STAGGER_DELAY,
+        delay: (index % 12) * STAGGER_DELAY,
         ease: "easeOut",
       }}
     >
@@ -92,7 +92,7 @@ export function BlogList({ posts, page, totalPages }: BlogListProps) {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post, i) => (
-          <BlogCard key={post.slug} post={post} index={i + (page - 1) * 9} />
+          <BlogCard key={post.slug} post={post} index={i + (page - 1) * 12} />
         ))}
       </div>
 

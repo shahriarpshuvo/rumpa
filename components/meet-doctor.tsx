@@ -7,7 +7,7 @@ import { Em } from "@/components/ui/em";
 
 export function MeetDoctor() {
   return (
-    <section id="about" className="relative px-4 sm:px-6 py-24 sm:py-32 mt-36">
+    <section id="about" className="relative px-4 sm:px-6 py-24 sm:py-32 mt-24">
       {/* decorative dingbat */}
       <div
         aria-hidden="true"

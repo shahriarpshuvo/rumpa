@@ -9,10 +9,11 @@ import { CalTrigger } from "@/components/cal-trigger";
 import { DATA } from "@/data/resume";
 
 const NAV = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Insights", href: "/blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Journey", href: "/#journey" },
+  { label: "Reviews", href: "/#testimonials" },
+  { label: "Guides & Insights", href: "/blog" },
+  { label: "About", href: "/#credentials" },
 ];
 
 export function Header() {
@@ -38,7 +39,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 sm:h-18 items-center justify-between gap-6">
           {/* brand */}
-          <Link href="#hero" aria-label={`${DATA.name} — home`} className="flex items-center gap-2.5">
+          <Link href="/" aria-label={`${DATA.name} — home`} className="flex items-center gap-2.5">
             <Image src="/logo.svg" alt="" width={36} height={36} priority className="size-9" />
             <span className="font-extrabold tracking-tight text-lg sm:text-xl text-foreground">Dr. Rezwana Rumpa</span>
           </Link>

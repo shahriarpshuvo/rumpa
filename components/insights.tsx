@@ -54,7 +54,7 @@ function FeaturedCard({ post }: { post: BlogPostMeta }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col rounded-3xl bg-card overflow-hidden shadow-mauve-lg hover:shadow-mauve transition-shadow ring-1 ring-adelaide-200"
+      className="group flex flex-col rounded-3xl bg-card overflow-hidden border border-adelaide-200 hover:border-adelaide-400 transition-colors"
     >
       <div
         className={`relative aspect-[40/21] w-full bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center overflow-hidden grain`}
@@ -72,26 +72,26 @@ function FeaturedCard({ post }: { post: BlogPostMeta }) {
             {post.category ?? "Read"}
           </span>
         )}
-        <div className="absolute top-4 left-4 flex items-center gap-1.5 rounded-full bg-blossom-300 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.15em] text-adelaide-950">
+        <div className="absolute top-4 right-4 flex items-center gap-1.5 rounded-full bg-blossom-300 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.15em] text-adelaide-950">
           ✦ Featured
         </div>
-        <div className="absolute bottom-4 right-4 bg-adelaide-950/80 backdrop-blur px-3 py-1.5 rounded-full text-xs text-adelaide-100 font-semibold">
+        <div className="absolute bottom-4 left-4 bg-adelaide-950/80 backdrop-blur px-3 py-1.5 rounded-full text-xs text-adelaide-100 font-semibold">
           {post.readTime} min read
         </div>
       </div>
-      <div className="flex flex-1 flex-col p-8 sm:p-10">
+      <div className="flex flex-col p-6 sm:p-8">
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           {post.category && <Em className="text-base">{post.category}</Em>}
           <span className="opacity-30">·</span>
           <span className="uppercase tracking-[0.15em] text-[11px] font-semibold">{formatDate(post.date)}</span>
         </div>
-        <h3 className="mt-4 text-3xl sm:text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground group-hover:text-adelaide-700 transition-colors">
+        <h3 className="mt-3 text-2xl sm:text-3xl font-extrabold leading-[1.05] tracking-tight text-foreground group-hover:text-adelaide-700 transition-colors">
           {applyEmphasis(post.title, post.emphasisWords)}
         </h3>
-        <p className="mt-4 text-base text-muted-foreground leading-relaxed line-clamp-2">
+        <p className="mt-3 text-base text-muted-foreground leading-relaxed line-clamp-2">
           {post.description}
         </p>
-        <div className="mt-auto pt-8 flex items-center justify-between">
+        <div className="mt-5 pt-5 border-t border-adelaide-200 flex items-center justify-between">
           <div className="text-sm text-muted-foreground">
             <strong className="text-foreground">Dr. Rezwana Rumpa</strong>
           </div>
@@ -108,7 +108,7 @@ function SecondaryCard({ post }: { post: BlogPostMeta }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-1 flex-col rounded-3xl bg-card overflow-hidden shadow-mauve hover:shadow-mauve-lg transition-shadow ring-1 ring-adelaide-200"
+      className="group flex flex-1 flex-col rounded-3xl bg-card overflow-hidden border border-adelaide-200 hover:border-adelaide-400 transition-colors"
     >
       <div
         className={`relative aspect-[40/21] w-full flex-shrink-0 bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center grain overflow-hidden`}
@@ -152,7 +152,7 @@ function CompactCard({ post }: { post: BlogPostMeta }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col rounded-2xl bg-card overflow-hidden shadow-mauve hover:shadow-mauve-lg transition-shadow ring-1 ring-adelaide-200"
+      className="group flex flex-col rounded-2xl bg-card overflow-hidden border border-adelaide-200 hover:border-adelaide-400 transition-colors"
     >
       <div
         className={`relative aspect-[40/21] w-full bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center grain overflow-hidden`}
@@ -198,8 +198,9 @@ export function Insights() {
 
   const featured = all.find((p) => p.featured) ?? all[0];
   const rest = all.filter((p) => p.slug !== featured.slug);
-  const secondaries = rest.slice(0, 2);
-  const tertiaries = rest.slice(2, 5);
+  const featuredSiblings = rest.slice(0, 2);
+  const secondaries = rest.slice(2, 4);
+  const tertiaries = rest.slice(4, 7);
 
   return (
     <section id="insights" className="px-4 sm:px-6 py-24 sm:py-32">
@@ -225,7 +226,16 @@ export function Insights() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-5">
-          <FeaturedCard post={featured} />
+          <div className="flex flex-col gap-5">
+            <FeaturedCard post={featured} />
+            {featuredSiblings.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {featuredSiblings.map((post) => (
+                  <CompactCard key={post.slug} post={post} />
+                ))}
+              </div>
+            )}
+          </div>
           <div className="flex flex-col gap-5">
             {secondaries.map((post) => (
               <SecondaryCard key={post.slug} post={post} />
@@ -240,6 +250,15 @@ export function Insights() {
             ))}
           </div>
         )}
+
+        <div className="mt-12 flex justify-center">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 h-12 px-7 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
+          >
+            Read all Guides & Insights →
+          </Link>
+        </div>
       </div>
     </section>
   );

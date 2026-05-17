@@ -6,7 +6,7 @@ export function Cite({ source, url }: { source: string; url?: string }) {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary hover:underline"
+          className="text-blossom-600 hover:underline"
           title={source}
         >
           [src]

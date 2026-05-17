@@ -15,7 +15,7 @@ export function BlogPostNav({ prev, next }: BlogPostNavProps) {
       {prev ? (
         <Link
           href={`/blog/${prev.slug}`}
-          className="group flex-1 flex flex-col gap-1 p-5 rounded-2xl border border-border/50 hover:bg-accent/30 transition-colors"
+          className="group flex-1 flex flex-col gap-1 p-5 rounded-lg border border-border/50 hover:bg-accent/30 transition-colors"
         >
           <span className="text-sm text-muted-foreground flex items-center gap-1">
             <ArrowLeft className="size-3 group-hover:-translate-x-px transition-transform" />
@@ -29,7 +29,7 @@ export function BlogPostNav({ prev, next }: BlogPostNavProps) {
       {next ? (
         <Link
           href={`/blog/${next.slug}`}
-          className="group flex-1 flex flex-col gap-1 p-5 rounded-2xl border border-border/50 hover:bg-accent/30 transition-colors text-right"
+          className="group flex-1 flex flex-col gap-1 p-5 rounded-lg border border-border/50 hover:bg-accent/30 transition-colors text-right"
         >
           <span className="text-sm text-muted-foreground flex items-center justify-end gap-1">
             Next

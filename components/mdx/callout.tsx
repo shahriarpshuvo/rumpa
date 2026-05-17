@@ -44,13 +44,13 @@ export function Callout({
   const style = STYLES[type] ?? STYLES.note;
   return (
     <div
-      className={`not-prose my-6 rounded-xl border p-4 ${style.wrap}`}
+      className={`not-prose my-6 rounded-lg border p-4 ${style.wrap}`}
     >
       <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-foreground">
         {style.icon}
         {style.label}
       </div>
-      <div className="text-sm leading-relaxed text-foreground/90 [&_a]:underline [&_a]:text-primary">
+      <div className="text-sm leading-relaxed text-foreground/90 [&_a]:underline [&_a]:text-blossom-600">
         {children}
       </div>
     </div>

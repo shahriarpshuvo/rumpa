@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const googleSans = Google_Sans_Flex({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ const lora = Lora({
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://drrezwanarumpa.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://rumpa.uk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -109,6 +110,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
