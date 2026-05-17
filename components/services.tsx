@@ -2,17 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  Heart,
-  Stethoscope,
-  Activity,
-  Baby,
-  ClipboardList,
-  ShieldCheck,
-} from "lucide-react";
-import Link from "next/link";
+import { Heart, Stethoscope, Activity, Baby, ClipboardList, ShieldCheck } from "lucide-react";
 import { DATA } from "@/data/resume";
 import { Em } from "@/components/ui/em";
+import { CalTrigger } from "@/components/cal-trigger";
 
 const ICONS = [Heart, Stethoscope, Activity, Baby, ClipboardList, ShieldCheck];
 
@@ -23,17 +16,14 @@ export function Services() {
         {/* huge ghost number */}
         <span
           aria-hidden="true"
-          className="absolute -top-10 -right-6 sm:-top-16 sm:-right-10 font-display italic font-bold text-[280px] sm:text-[400px] leading-none text-adelaide-100/[0.04] select-none pointer-events-none"
+          className="absolute -top-10 -right-6 sm:-top-16 sm:-right-10 font-display italic font-bold text-[280px] leading-none text-adelaide-100/[0.04] select-none pointer-events-none"
         >
-          02
+          Rumpa
         </span>
 
         <div className="relative flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-300">
-              § 02 — Services
-            </span>
-            <h2 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight">
               How I can
               <br />
               <Em className="text-blossom-300">help you.</Em>
@@ -42,12 +32,11 @@ export function Services() {
               Comprehensive fertility care tailored to your unique journey — diagnosis through delivery.
             </p>
           </div>
-          <Link
-            href="#contact"
+          <CalTrigger
             className="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-blossom-300 text-adelaide-950 text-sm font-bold hover:bg-blossom-400 transition-colors self-start lg:self-auto"
           >
             Ask anything →
-          </Link>
+          </CalTrigger>
         </div>
 
         <div className="relative mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -69,12 +58,8 @@ export function Services() {
                     .0{i + 1}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold leading-snug text-adelaide-100">
-                  {service.name}
-                </h3>
-                <p className="mt-2 text-sm text-adelaide-300 leading-relaxed">
-                  {service.description}
-                </p>
+                <h3 className="text-lg font-bold leading-snug text-adelaide-100">{service.name}</h3>
+                <p className="mt-2 text-sm text-adelaide-300 leading-relaxed">{service.description}</p>
               </motion.div>
             );
           })}
