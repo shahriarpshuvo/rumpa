@@ -14,7 +14,7 @@ export function AuthorCard() {
       itemType="https://schema.org/Person"
     >
       <div className="flex flex-col sm:flex-row">
-        <div className="relative w-full sm:w-44 sm:flex-shrink-0 bg-muted">
+        <div className="relative w-full aspect-[5/3] sm:aspect-auto sm:w-44 sm:flex-shrink-0 bg-muted">
           <Image
             src="/rumpa-square.png"
             alt={DATA.name}

@@ -24,6 +24,7 @@ export interface BlogPostMeta {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
   description: string;
   thumbnail?: string;
   category?: BlogCategory;
@@ -51,6 +52,7 @@ export function getAllPosts(): BlogPostMeta[] {
       slug,
       title: data.title ?? slug,
       date: data.date ?? "",
+      updated: data.updated ?? data.updatedAt,
       description: data.description ?? "",
       thumbnail: resolveThumbnail(data.thumbnail ?? data.coverImage),
       category: data.category as BlogCategory | undefined,
@@ -89,6 +91,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     slug,
     title: data.title ?? slug,
     date: data.date ?? "",
+    updated: data.updated ?? data.updatedAt,
     description: data.description ?? "",
     thumbnail: resolveThumbnail(data.thumbnail ?? data.coverImage),
     category: data.category as BlogCategory | undefined,

@@ -2,14 +2,13 @@ export const DATA = {
   name: "Dr. Rezwana Rumpa",
   initials: "RR",
   title: "Fertility & PCOS Specialist",
-  location: "Dhaka, Bangladesh",
+  location: "UK & Bangladesh",
   summary:
     "Board-certified fertility specialist dedicated to helping couples on their journey to parenthood. Expert in PCOS management, ovulation induction, and personalized fertility care with a compassionate, evidence-based approach.",
   avatarUrl: "/rumpa.png",
   tagline: "Helping you build the family you dream of",
   contact: {
-    email: "dr.rezwana@example.com",
-    phone: "+880-1XXX-XXXXXX",
+    email: "dr.rezwanarumpa@gmail.com",
     facebook: "https://www.facebook.com/dr.rezwanarumpa",
     instagram: "https://www.instagram.com/dr.rezwanarumpa",
     tiktok: "https://www.tiktok.com/@dr.rezwanarumpa",
@@ -162,7 +161,7 @@ export const DATA = {
     {
       question: "Do you offer IVF? Or only initial fertility care?",
       answer:
-        "My practice focuses on diagnosis, ovulation induction, timed intercourse, and IUI prep. For cases that need IVF, I work closely with trusted IVF centers in Dhaka — your records, plan, and monitoring stay continuous so the handover is seamless.",
+        "My practice focuses on diagnosis, ovulation induction, timed intercourse, and IUI prep. For cases that need IVF, I refer to trusted IVF centres in Bangladesh and coordinate with UK clinics for international patients — your records, plan, and monitoring stay continuous so the handover is seamless.",
     },
     {
       question: "What should I expect to spend?",
@@ -185,9 +184,9 @@ export const DATA = {
         "Most fertility treatments need 3–6 cycles to fairly evaluate. After each cycle we review what worked, adjust dosing or approach, and update the plan together. The path is iterative, not linear.",
     },
     {
-      question: "Can I book virtually if I'm outside Dhaka?",
+      question: "Do you see patients online?",
       answer:
-        "Yes — initial consultations and follow-ups can be conducted online via secure video. In-person visits are needed for ultrasound monitoring and certain procedures, but much of the journey can be supported remotely.",
+        "Yes. UK and international patients are seen online via secure video — initial consultation, follow-ups, and treatment planning. In-person visits and procedures happen at the Bangladesh clinic. For ultrasound monitoring or hands-on care abroad, I'll coordinate with a local clinic and stay involved in the plan.",
     },
   ],
 } as const;

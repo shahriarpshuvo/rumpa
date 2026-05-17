@@ -35,7 +35,7 @@ export function Footer() {
       <div className="relative mx-auto max-w-5xl px-6 py-20 sm:py-40 relative">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-8 right-3 w-[420px] sm:w-[600px] aspect-square opacity-[0.25]"
+          className="pointer-events-none absolute -bottom-12 -right-20 sm:right-3 w-[280px] sm:w-[600px] aspect-square opacity-[0.12] sm:opacity-[0.25]"
         >
           <Image src="/icon.svg" alt="" fill className="object-contain" sizes="600px" />
         </div>
@@ -43,8 +43,8 @@ export function Footer() {
           <div className="max-w-md">
             <div className="font-display italic font-semibold text-3xl sm:text-4xl text-adelaide-100">{DATA.name}</div>
             <p className="mt-4 text-base text-adelaide-300 leading-relaxed">
-              Fertility & PCOS specialist based in Dhaka, working with patients across the UK and Bangladesh. This is my
-              space to share what I learn in clinic — evidence-led, honest, and useful.
+              Fertility & PCOS specialist. In-person clinic in Bangladesh, online consultations for UK patients and
+              anywhere else. This is my space to share what I learn in clinic: evidence-led, honest, and useful.
             </p>
           </div>
 

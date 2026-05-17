@@ -16,15 +16,15 @@ export function Hero() {
         initial={{ opacity: 0.7, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-gradient-to-br from-adelaide-100 via-adelaide-200 to-adelaide-400 px-6 pt-12 sm:px-10 sm:pt-16 lg:px-14 lg:pt-20 grain mt-4"
+        className="relative mx-auto max-w-7xl overflow-hidden rounded-[28px] bg-gradient-to-br from-adelaide-100 via-adelaide-200 to-adelaide-400 px-6 pt-12 sm:px-10 sm:pt-16 lg:px-14 lg:pt-20 grain sm:mt-4"
       >
         {/* mega backdrop name */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
         >
-          <span className="font- font-extrabold leading-none tracking-tighter text-adelaide-50/55 text-[180px] sm:text-[260px]">
-            <span className="mr-8">Dr.</span>Rumpa
+          <span className="font- font-extrabold leading-none tracking-tighter text-adelaide-50/55 text-[72px] sm:text-[260px]">
+            <span className="mr-1 sm:mr-8">Dr.</span>Rumpa
           </span>
         </div>
 
@@ -58,7 +58,7 @@ export function Hero() {
         </div>
 
         {/* portrait */}
-        <div className="relative -top-36 z-10 flex justify-center ">
+        <div className="relative -top-32 sm:-top-36 left-8 sm:left-0 z-10 flex justify-center mt-6 sm:mt-0">
           <div className="relative">
             <Image
               src="/img/hero.png"
@@ -66,13 +66,13 @@ export function Hero() {
               width={420}
               height={520}
               priority
-              className="h-[380px] w-auto object-contain object-top drop-shadow-[0_20px_30px_rgba(35,26,34,0.35)] sm:h-[480px] lg:h-[640px] relative z-10"
+              className="h-[420px] w-auto object-contain object-top drop-shadow-[0_20px_30px_rgba(35,26,34,0.35)] sm:h-[480px] lg:h-[640px] relative z-10"
             />
-            <StickerBadge className="absolute top-28 pl-8 -right-2 sm:-right-4 bg-blossom-300 text-adelaide-950 -rotate-6">
+            <StickerBadge className="hidden sm:inline-flex absolute top-28 pl-8 -right-4 bg-blossom-300 text-adelaide-950 -rotate-6">
               <HeartHandshake className="size-3.5" />
               TTC consults open
             </StickerBadge>
-            <StickerBadge className="absolute bottom-20 pr-8 -left-6 sm:-left-12 bg-adelaide-950 text-blossom-200 rotate-3">
+            <StickerBadge className="hidden sm:inline-flex absolute bottom-20 pr-8 -left-12 bg-adelaide-950 text-blossom-200 rotate-3">
               <Baby className="size-3.5" />
               200+ TTC families helped
             </StickerBadge>

@@ -69,30 +69,52 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
     day: "numeric",
   });
 
+  const ogImage = post.thumbnail ? `${SITE_URL}${post.thumbnail}` : `${SITE_URL}/social.png`;
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    dateModified: post.date,
-    image: post.thumbnail ? `${SITE_URL}${post.thumbnail}` : undefined,
-    url: `${SITE_URL}/blog/${slug}`,
-    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
-    articleSection: post.category,
-    wordCount: post.content.trim().split(/\s+/).length,
-    publisher: {
-      "@type": "Organization",
-      name: DATA.name,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
-    },
-    author: {
-      "@type": "Physician",
-      name: DATA.name,
-      url: SITE_URL,
-      image: `${SITE_URL}/rumpa-square.png`,
-      jobTitle: DATA.title,
-    },
+    "@graph": [
+      {
+        "@type": ["MedicalWebPage", "BlogPosting"],
+        "@id": `${SITE_URL}/blog/${slug}#article`,
+        headline: post.title,
+        description: post.description,
+        datePublished: post.date,
+        dateModified: post.updated ?? post.date,
+        lastReviewed: post.updated ?? post.date,
+        reviewedBy: { "@id": `${SITE_URL}/#physician` },
+        image: ogImage,
+        url: `${SITE_URL}/blog/${slug}`,
+        mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+        articleSection: post.category,
+        wordCount: post.content.trim().split(/\s+/).length,
+        inLanguage: "en-GB",
+        about: post.category ? { "@type": "MedicalCondition", name: post.category } : undefined,
+        audience: {
+          "@type": "PeopleAudience",
+          audienceType: "Patients trying to conceive",
+        },
+        publisher: { "@id": `${SITE_URL}/#organization` },
+        author: { "@id": `${SITE_URL}/#physician` },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", "header p", "article h2"],
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: post.title,
+            item: `${SITE_URL}/blog/${slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -134,10 +156,10 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
           </div>
         </header>
 
-        {post.thumbnail && (
-          <div className="relative aspect-[40/21] w-full rounded-lg overflow-hidden bg-muted border border-adelaide-200">
+        {"thumbnail" in post && post.thumbnail ? (
+          <div className="relative aspect-40/21 w-full rounded-lg overflow-hidden bg-muted border border-adelaide-200">
             <Image
-              src={post.thumbnail}
+              src={post.thumbnail as string}
               alt={post.title}
               fill
               priority
@@ -146,7 +168,7 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
               itemProp="image"
             />
           </div>
-        )}
+        ) : null}
 
         <div
           className="prose dark:prose-invert max-w-full text-pretty font-sans leading-relaxed text-foreground mt-10 prose-p:text-foreground prose-li:text-foreground prose-headings:text-foreground prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-strong:text-foreground prose-a:text-blossom-600 hover:prose-a:text-blossom-700 prose-a:underline-offset-4 prose-li:my-1 prose-img:rounded-lg"

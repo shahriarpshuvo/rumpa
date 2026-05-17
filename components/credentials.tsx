@@ -16,6 +16,13 @@ export function Credentials() {
             <br />
             Practicing where it <Em>matters.</Em>
           </h2>
+          <div className="mt-5 inline-flex items-center gap-2 rounded-md border border-adelaide-300 bg-card px-3 py-1.5 text-xs">
+            <span className="font-bold uppercase tracking-[0.15em] text-blossom-600">BMDC</span>
+            <span className="text-adelaide-300">·</span>
+            <span className="font-mono font-semibold text-foreground">A68043</span>
+            <span className="text-adelaide-300">·</span>
+            <span className="text-muted-foreground">Verified registration</span>
+          </div>
         </div>
 
         {/* Hero image */}

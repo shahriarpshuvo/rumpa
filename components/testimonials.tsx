@@ -40,7 +40,7 @@ export function Testimonials() {
             &ldquo;She didn&apos;t just treat me — <br className="hidden sm:block" /> she <span className="text-blossom-600">walked beside us.</span>&rdquo;
           </p>
           <p className="mt-6 text-sm uppercase tracking-[0.25em] text-muted-foreground font-semibold">
-            Trusted by 200+ TTC families across the UK
+            Trusted by 200+ TTC families worldwide
           </p>
         </motion.div>
 

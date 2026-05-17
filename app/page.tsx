@@ -15,19 +15,119 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://rumpa.uk";
 const physicianJsonLd = {
   "@context": "https://schema.org",
   "@type": "Physician",
+  "@id": `${SITE_URL}/#physician`,
   name: DATA.name,
+  honorificPrefix: "Dr.",
+  honorificSuffix: "MRCOG, MRCPI, MBBS",
+  identifier: [
+    {
+      "@type": "PropertyValue",
+      propertyID: "BMDC",
+      name: "Bangladesh Medical & Dental Council Registration",
+      value: "A68043",
+    },
+  ],
+  jobTitle: DATA.title,
   description: DATA.summary,
   url: SITE_URL,
+  image: `${SITE_URL}/rumpa-square.png`,
   email: DATA.contact.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Dhaka",
-    addressCountry: "BD",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "patient enquiries",
+    email: DATA.contact.email,
+    availableLanguage: ["en", "bn"],
+    areaServed: ["GB", "BD"],
+  },
+  worksFor: { "@id": `${SITE_URL}/#organization` },
+  areaServed: [
+    { "@type": "Country", name: "United Kingdom" },
+    { "@type": "Country", name: "Bangladesh" },
+  ],
+  availableService: {
+    "@type": "MedicalTherapy",
+    name: "Telemedicine fertility consultation",
   },
   medicalSpecialty: [
+    "https://schema.org/ReproductiveEndocrinology",
+    "https://schema.org/Obstetric",
+  ],
+  alumniOf: [
+    {
+      "@type": "EducationalOrganization",
+      name: "Royal College of Obstetricians & Gynaecologists",
+      url: "https://www.rcog.org.uk/",
+    },
+    {
+      "@type": "EducationalOrganization",
+      name: "Royal College of Physicians of Ireland",
+      url: "https://www.rcpi.ie/",
+    },
+    {
+      "@type": "EducationalOrganization",
+      name: "Shaheed Monsur Ali Medical College, Dhaka University",
+    },
+  ],
+  memberOf: [
+    {
+      "@type": "Organization",
+      name: "Royal College of Obstetricians & Gynaecologists",
+      url: "https://www.rcog.org.uk/",
+    },
+    {
+      "@type": "Organization",
+      name: "Royal College of Physicians of Ireland",
+      url: "https://www.rcpi.ie/",
+    },
+  ],
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Medical License",
+      name: "BMDC Registration",
+      identifier: "A68043",
+      recognizedBy: {
+        "@type": "GovernmentOrganization",
+        name: "Bangladesh Medical & Dental Council",
+        url: "https://bmdc.org.bd/",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "degree",
+      name: "MBBS",
+      educationalLevel: "Bachelor",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Shaheed Monsur Ali Medical College, Dhaka University",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Postgraduate Membership",
+      name: "MRCOG (Final Part)",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Royal College of Obstetricians & Gynaecologists",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Postgraduate Membership",
+      name: "MRCPI (Part II, Obs & Gynae)",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Royal College of Physicians of Ireland",
+      },
+    },
+  ],
+  knowsAbout: [
+    "Polycystic Ovary Syndrome",
+    "Ovulation Induction",
+    "IVF preparation",
+    "Preconception Care",
+    "Fertility Assessment",
     "Reproductive Endocrinology",
-    "Fertility Medicine",
-    "PCOS Treatment",
   ],
   sameAs: [DATA.contact.facebook, DATA.contact.instagram, DATA.contact.tiktok],
 };

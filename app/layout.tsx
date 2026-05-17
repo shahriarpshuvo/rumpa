@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { DATA } from "@/data/resume";
 
 const googleSans = Google_Sans_Flex({
   subsets: ["latin"],
@@ -43,13 +44,15 @@ export const metadata: Metadata = {
     "Dr. Rezwana Rumpa",
     "Infertility Treatment",
     "Preconception Care",
+    "UK Fertility Doctor",
     "Bangladesh Fertility Doctor",
+    "Telemedicine Fertility Consultation",
   ],
   authors: [{ name: "Dr. Rezwana Rumpa" }],
   creator: "Dr. Rezwana Rumpa",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
     url: SITE_URL,
     siteName: "Dr. Rezwana Rumpa",
     title: "Dr. Rezwana Rumpa | Fertility & PCOS Specialist",
@@ -102,11 +105,61 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-GB"
       suppressHydrationWarning
       className={cn("h-full antialiased font-sans", googleSans.variable, lora.variable, jetbrainsMono.variable)}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "MedicalBusiness",
+                  "@id": `${SITE_URL}/#organization`,
+                  name: DATA.name,
+                  url: SITE_URL,
+                  logo: `${SITE_URL}/icon.png`,
+                  image: `${SITE_URL}/rumpa-square.png`,
+                  email: DATA.contact.email,
+                  description: DATA.summary,
+                  areaServed: [
+                    { "@type": "Country", name: "United Kingdom" },
+                    { "@type": "Country", name: "Bangladesh" },
+                  ],
+                  medicalSpecialty: [
+                    "https://schema.org/ReproductiveEndocrinology",
+                    "https://schema.org/Obstetric",
+                  ],
+                  founder: { "@id": `${SITE_URL}/#physician` },
+                  sameAs: [
+                    DATA.contact.facebook,
+                    DATA.contact.instagram,
+                    DATA.contact.tiktok,
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": `${SITE_URL}/#website`,
+                  url: SITE_URL,
+                  name: DATA.name,
+                  publisher: { "@id": `${SITE_URL}/#organization` },
+                  inLanguage: "en-GB",
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
+                    },
+                    "query-input": "required name=search_term_string",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
         <ThemeProvider>
           <Header />
           {children}
