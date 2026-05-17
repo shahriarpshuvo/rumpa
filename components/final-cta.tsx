@@ -46,11 +46,13 @@ export function FinalCTA() {
               Book Consultation
             </CalTrigger>
             <Link
-              href="#contact"
+              href="https://ig.me/m/dr.rezwanarumpa"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full border border-adelaide-300/40 text-adelaide-100 text-sm font-medium hover:bg-adelaide-800 transition-colors"
             >
               <MessageCircle className="size-4" />
-              Ask a question
+              Ask on Instagram
             </Link>
           </div>
         </div>

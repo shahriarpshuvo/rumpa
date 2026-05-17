@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Heart, Stethoscope, Activity, Baby, ClipboardList, ShieldCheck, Quote } from "lucide-react";
 import { DATA } from "@/data/resume";
 import { Em } from "@/components/ui/em";
-import { CalTrigger } from "@/components/cal-trigger";
 
 const ICONS = [Heart, Stethoscope, Activity, Baby, ClipboardList, ShieldCheck];
 
@@ -32,9 +31,14 @@ export function Services() {
               Comprehensive fertility care tailored to your unique journey — diagnosis through delivery.
             </p>
           </div>
-          <CalTrigger className="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-blossom-300 text-adelaide-950 text-sm font-bold hover:bg-blossom-400 transition-colors self-start lg:self-auto">
-            Ask anything →
-          </CalTrigger>
+          <a
+            href="https://ig.me/m/dr.rezwanarumpa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-blossom-300 text-adelaide-950 text-sm font-bold hover:bg-blossom-400 transition-colors self-start lg:self-auto"
+          >
+            Ask on Instagram →
+          </a>
         </div>
 
         <div className="relative mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
