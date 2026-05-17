@@ -82,34 +82,22 @@ export const DATA = {
   ],
   education: [
     {
-      degree: "MRCOG (Final Part)",
+      degree: "MRCOG",
+      stage: "Final Part",
       institution: "Royal College of Obstetricians & Gynaecologists",
       location: "London, UK",
-      year: "",
     },
     {
-      degree: "MRCPI (Obs & Gynae) (Final Part)",
+      degree: "MRCPI",
+      stage: "Obs & Gynae · Final Part",
       institution: "Royal College of Physicians of Ireland",
       location: "Dublin, Ireland",
-      year: "",
     },
     {
       degree: "MBBS",
+      stage: "January 2013",
       institution: "Shaheed Monsur Ali Medical College, Dhaka University",
       location: "Dhaka, Bangladesh",
-      year: "January 2013",
-    },
-    {
-      degree: "H.S.C — GPA: 5.00",
-      institution: "Govt. Azizul Haque College",
-      location: "Bogra, Rajshahi",
-      year: "2007",
-    },
-    {
-      degree: "S.S.C — GPA: 5.00",
-      institution: "Govt. Girls High School",
-      location: "Bogra, Rajshahi",
-      year: "2005",
     },
   ],
   professionalExperience: [
