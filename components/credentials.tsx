@@ -20,111 +20,136 @@ export function Credentials() {
           </h2>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12">
+        {/* TOP — landscape operation polaroid */}
+        <motion.figure
+          initial={{ opacity: 0.6, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
+          className="mt-12 mx-auto max-w-5xl bg-card p-3 pb-6 shadow-mauve-lg ring-1 ring-adelaide-200"
+          style={{ transform: "rotate(-0.75deg)" }}
+        >
+          <div className="relative aspect-[16/9] overflow-hidden grain">
+            <Image
+              src="/img/operation.png"
+              alt="Dr. Rumpa in surgical scrubs at the operating theater"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 60vw"
+            />
+          </div>
+          <figcaption className="px-3 pt-4 flex items-baseline justify-between gap-3 flex-wrap">
+            <span className="font-display italic text-xl text-foreground">
+              Surgical practice
+            </span>
+            <span className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground font-semibold">
+              Obs &amp; Gynae · Operating theater
+            </span>
+          </figcaption>
+        </motion.figure>
+
+        {/* TWO COLUMNS — Education left, Experience+Honorary right */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12">
+          {/* LEFT — Education */}
           <div>
-            <h3 className="font-display italic text-2xl font-semibold text-adelaide-700 mb-6">
-              Education &amp; Fellowship
+            <h3 className="font-display italic text-2xl font-semibold text-adelaide-700 mb-7">
+              Education
             </h3>
-            <ol className="space-y-6 border-l-2 border-blossom-400 pl-7">
-              {DATA.qualifications.map((q, i) => (
+            <ol className="space-y-7 border-l-2 border-blossom-400 pl-7">
+              {DATA.education.map((e, i) => (
                 <motion.li
-                  key={q.degree}
+                  key={`${e.degree}-${i}`}
                   initial={{ opacity: 0.6, x: -6 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
                   className="relative"
                 >
                   <span className="absolute -left-[35px] top-1.5 size-4 rounded-full bg-blossom-400 ring-4 ring-secondary" />
-                  <div className="flex items-baseline gap-3 flex-wrap">
-                    <span className="font-display italic font-bold text-2xl text-blossom-600">
-                      {q.year}
-                    </span>
-                    <span className="font-bold text-foreground text-lg">{q.degree}</span>
+                  <div className="flex items-baseline justify-between gap-3 flex-wrap">
+                    <h4 className="font-bold text-foreground text-lg leading-snug">
+                      ★ {e.degree}
+                    </h4>
+                    {e.year && (
+                      <span className="font-display italic font-bold text-blossom-600 text-base whitespace-nowrap">
+                        {e.year}
+                      </span>
+                    )}
                   </div>
                   <div className="mt-1 text-sm font-semibold text-foreground/80">
-                    {q.institution}
+                    {e.institution}
                   </div>
-                  <div className="mt-1 text-sm text-muted-foreground leading-relaxed">
-                    {q.description}
-                  </div>
+                  {e.location && (
+                    <div className="mt-0.5 text-xs uppercase tracking-[0.15em] text-muted-foreground font-semibold">
+                      {e.location}
+                    </div>
+                  )}
                 </motion.li>
               ))}
             </ol>
-
-            <h3 className="font-display italic text-2xl font-semibold text-adelaide-700 mt-12 mb-6">
-              Speaking &amp; Research
-            </h3>
-            <ul className="space-y-4">
-              {DATA.academics.map((a, i) => (
-                <motion.li
-                  key={a.title}
-                  initial={{ opacity: 0.6, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.06 }}
-                  className="rounded-2xl bg-card p-5 ring-1 ring-adelaide-200"
-                >
-                  <div className="flex items-baseline justify-between gap-3 flex-wrap">
-                    <h4 className="font-bold text-foreground">{a.title}</h4>
-                    <span className="font-display italic font-semibold text-blossom-600">
-                      {a.year}
-                    </span>
-                  </div>
-                  <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-blossom-700 font-semibold">
-                    {a.role}
-                  </div>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                    {a.description}
-                  </p>
-                </motion.li>
-              ))}
-            </ul>
           </div>
 
-          {/* photo collage — polaroid style */}
-          <div className="flex flex-col gap-5">
-            <figure className="bg-card p-3 pb-5 shadow-mauve-lg ring-1 ring-adelaide-200" style={{ transform: 'rotate(1.5deg)' }}>
-              <div className="relative aspect-[4/5] overflow-hidden grain">
-                <Image
-                  src="/img/watching.png"
-                  alt="Dr. Rumpa reviewing diagnostic imaging"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                />
-              </div>
-              <figcaption className="px-3 pt-3 font-display italic text-sm text-foreground">
-                Diagnostic review · National Fertility Center
-              </figcaption>
-            </figure>
-            <div className="grid grid-cols-2 gap-4">
-              <figure className="bg-card p-2.5 pb-4 shadow-mauve ring-1 ring-adelaide-200" style={{ transform: 'rotate(-2deg)' }}>
-                <div className="relative aspect-square overflow-hidden grain">
-                  <Image
-                    src="/img/operation.png"
-                    alt="Dr. Rumpa in surgical scrubs"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 50vw, 20vw"
-                  />
-                </div>
-                <figcaption className="px-2 pt-2 font-display italic text-xs text-foreground">
-                  Surgical practice
-                </figcaption>
-              </figure>
-              <figure className="bg-card p-2.5 pb-4 shadow-mauve ring-1 ring-adelaide-200" style={{ transform: 'rotate(1.5deg)' }}>
-                <div className="relative aspect-square overflow-hidden grain">
-                  <Image
-                    src="/img/prescribing.png"
-                    alt="Dr. Rumpa during a patient consultation"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 50vw, 20vw"
-                  />
-                </div>
-                <figcaption className="px-2 pt-2 font-display italic text-xs text-foreground">
-                  Consultation
-                </figcaption>
-              </figure>
+          {/* RIGHT — Professional Experience + Honorary Training */}
+          <div className="flex flex-col gap-10">
+            <div>
+              <h3 className="font-display italic text-2xl font-semibold text-adelaide-700 mb-5">
+                Professional Experience
+              </h3>
+              <ul className="space-y-4">
+                {DATA.professionalExperience.map((p, i) => (
+                  <motion.li
+                    key={p.position}
+                    initial={{ opacity: 0.6, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.06 }}
+                    className="rounded-2xl bg-card p-5 ring-1 ring-adelaide-200"
+                  >
+                    <div className="flex items-start justify-between gap-3 flex-wrap">
+                      <h4 className="font-bold text-foreground leading-snug">
+                        {p.position}
+                      </h4>
+                      <span className="font-display italic font-semibold text-blossom-600 whitespace-nowrap">
+                        {p.duration}
+                      </span>
+                    </div>
+                    <div className="mt-1 text-sm text-foreground/80 font-semibold">
+                      {p.hospital}
+                    </div>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-display italic text-2xl font-semibold text-adelaide-700 mb-5">
+                Honorary Training{" "}
+                <span className="text-base text-muted-foreground font-sans not-italic font-normal">
+                  (Obs &amp; Gynae)
+                </span>
+              </h3>
+              <ul className="space-y-4">
+                {DATA.honoraryTraining.map((t, i) => (
+                  <motion.li
+                    key={t.institution}
+                    initial={{ opacity: 0.6, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.06 }}
+                    className="rounded-2xl bg-card p-5 ring-1 ring-adelaide-200"
+                  >
+                    <div className="flex items-start justify-between gap-3 flex-wrap">
+                      <h4 className="font-bold text-foreground leading-snug">
+                        ★ {t.institution}
+                      </h4>
+                      <span className="font-display italic font-semibold text-blossom-600 whitespace-nowrap">
+                        {t.duration}
+                      </span>
+                    </div>
+                    {"location" in t && t.location && (
+                      <div className="mt-0.5 text-xs uppercase tracking-[0.15em] text-muted-foreground font-semibold">
+                        {t.location}
+                      </div>
+                    )}
+                  </motion.li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

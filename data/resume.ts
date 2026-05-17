@@ -80,82 +80,56 @@ export const DATA = {
       rating: 5,
     },
   ],
-  qualifications: [
+  education: [
+    {
+      degree: "MRCOG (Final Part)",
+      institution: "Royal College of Obstetricians & Gynaecologists",
+      location: "London, UK",
+      year: "",
+    },
+    {
+      degree: "MRCPI (Obs & Gynae) (Final Part)",
+      institution: "Royal College of Physicians of Ireland",
+      location: "Dublin, Ireland",
+      year: "",
+    },
     {
       degree: "MBBS",
+      institution: "Shaheed Monsur Ali Medical College, Dhaka University",
+      location: "Dhaka, Bangladesh",
+      year: "January 2013",
+    },
+    {
+      degree: "H.S.C — GPA: 5.00",
+      institution: "Govt. Azizul Haque College",
+      location: "Bogra, Rajshahi",
+      year: "2007",
+    },
+    {
+      degree: "S.S.C — GPA: 5.00",
+      institution: "Govt. Girls High School",
+      location: "Bogra, Rajshahi",
+      year: "2005",
+    },
+  ],
+  professionalExperience: [
+    {
+      position: "Senior Medical Officer, Obs & Gynae Department",
+      hospital: "BRB Hospitals Ltd.",
+      duration: "3 Years",
+    },
+  ],
+  honoraryTraining: [
+    {
       institution: "Dhaka Medical College",
-      year: "2012",
-      description: "Graduated with honors in Obstetrics & Gynecology",
+      focus: "Obs & Gynae",
+      duration: "1.5 Years",
     },
     {
-      degree: "FCPS (Gynecology & Obstetrics)",
-      institution: "Bangladesh College of Physicians and Surgeons",
-      year: "2017",
-      description: "Fellowship specializing in reproductive medicine",
-    },
-    {
-      degree: "MS in Reproductive Medicine",
-      institution: "University of Dhaka",
-      year: "2020",
-      description: "Advanced training in fertility treatments and PCOS management",
-    },
-  ],
-  academics: [
-    {
-      title: "Novel Approaches in PCOS-Related Infertility Management",
-      role: "Lead Researcher",
-      year: "2024",
-      description:
-        "Published research on improved ovulation induction protocols for PCOS patients with insulin resistance.",
-    },
-    {
-      title: "Preconception Care Guidelines for Bangladeshi Women",
-      role: "Co-Author",
-      year: "2023",
-      description:
-        "Contributed to national guidelines for preconception health optimization in the Bangladeshi context.",
-    },
-    {
-      title: "Recurrent Pregnancy Loss: A Comprehensive Review",
-      role: "Author",
-      year: "2022",
-      description:
-        "Systematic review of causes and management strategies for recurrent early pregnancy loss.",
-    },
-  ],
-  experience: [
-    {
-      position: "Consultant Fertility Specialist",
-      hospital: "National Fertility & IVF Center",
-      start: "2021",
-      end: "Present",
-      description: [
-        "Leading fertility consultations and treatment plans for couples with complex infertility cases",
-        "Specializing in PCOS management, ovulation induction, and minimally invasive fertility procedures",
-        "Managing over 500+ successful conception cases with a patient-centered approach",
-      ],
-    },
-    {
-      position: "Senior Registrar, Obstetrics & Gynecology",
-      hospital: "Dhaka Medical College Hospital",
-      start: "2017",
-      end: "2021",
-      description: [
-        "Managed high-risk pregnancies and gynecological emergencies in one of Bangladesh's busiest hospitals",
-        "Conducted reproductive health camps in rural areas reaching 1000+ underserved women",
-        "Trained junior doctors in fertility assessment and ultrasound-guided procedures",
-      ],
-    },
-    {
-      position: "Resident Medical Officer",
-      hospital: "Square Hospital Ltd.",
-      start: "2013",
-      end: "2017",
-      description: [
-        "Provided comprehensive obstetric and gynecological care under senior consultants",
-        "Assisted in complex gynecological surgeries and cesarean sections",
-        "Developed strong foundational skills in reproductive medicine and patient communication",
-      ],
+      institution: "250 Bedded Mohammad Ali Hospital",
+      focus: "Obs & Gynae",
+      duration: "6 Months",
+      location: "Bogura",
     },
   ],
   stats: [
