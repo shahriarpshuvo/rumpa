@@ -2,10 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { Lora, Google_Sans_Flex, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { DATA } from "@/data/resume";
+
+// note: light theme only — dark mode disabled
 
 const googleSans = Google_Sans_Flex({
   subsets: ["latin"],
@@ -92,10 +93,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "oklch(0.959 0.007 312.56)" },
-    { media: "(prefers-color-scheme: dark)", color: "oklch(0.152 0.012 319.49)" },
-  ],
+  themeColor: "oklch(0.959 0.007 312.56)",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -106,8 +105,8 @@ export default function RootLayout({
   return (
     <html
       lang="en-GB"
-      suppressHydrationWarning
-      className={cn("h-full antialiased font-sans", googleSans.variable, lora.variable, jetbrainsMono.variable)}
+      className={cn("h-full antialiased font-sans light", googleSans.variable, lora.variable, jetbrainsMono.variable)}
+      style={{ colorScheme: "light" }}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <script
@@ -160,11 +159,9 @@ export default function RootLayout({
             }),
           }}
         />
-        <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

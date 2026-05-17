@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/api/", "/_next/"],
       },
       // AI search / citation crawlers — explicitly allowed for visibility
       {

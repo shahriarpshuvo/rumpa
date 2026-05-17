@@ -79,11 +79,26 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-6 border-t border-adelaide-800/60 flex flex-col gap-2 text-xs text-adelaide-500">
+        <div className="mt-12 rounded-lg border border-adelaide-800/80 bg-adelaide-900/40 p-4 text-[11px] leading-relaxed text-adelaide-300">
+          <strong className="text-adelaide-100">Not medical advice.</strong>{" "}
+          Articles on this site are general fertility education. They do not
+          replace a personalised consultation with a qualified clinician. In
+          an emergency call your local emergency number.
+        </div>
+
+        <div className="mt-6 pt-6 border-t border-adelaide-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-adelaide-500">
           <span>
             © {year} {DATA.name}. All rights reserved.
           </span>
-          <span>Built with care.</span>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="hover:text-adelaide-100 transition-colors">
+              Privacy
+            </Link>
+            <Link href="/terms" className="hover:text-adelaide-100 transition-colors">
+              Terms
+            </Link>
+            <span className="hidden sm:inline">BMDC: A68043</span>
+          </div>
         </div>
       </div>
     </footer>
