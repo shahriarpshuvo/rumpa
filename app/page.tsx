@@ -8,7 +8,6 @@ import { Testimonials } from "@/components/testimonials";
 import { Credentials } from "@/components/credentials";
 import { FAQ } from "@/components/faq";
 import { FinalCTA } from "@/components/final-cta";
-import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { DATA } from "@/data/resume";
 
@@ -69,7 +68,6 @@ export default function Home() {
       <Credentials />
       <FAQ />
       <FinalCTA />
-      <Contact />
       <Footer />
     </main>
   );

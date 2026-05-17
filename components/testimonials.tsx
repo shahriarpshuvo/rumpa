@@ -36,10 +36,7 @@ export function Testimonials() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center mb-16"
         >
-          <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-600">
-            § 05 — Real stories
-          </span>
-          <p className="mt-4 font-display italic text-3xl sm:text-5xl lg:text-6xl font-medium leading-[1.05] text-foreground tracking-tight">
+          <p className="font-display italic text-3xl sm:text-5xl lg:text-6xl font-medium leading-[1.05] text-foreground tracking-tight">
             &ldquo;She didn&apos;t just treat me — <br className="hidden sm:block" /> she <span className="text-blossom-600">walked beside us.</span>&rdquo;
           </p>
           <p className="mt-6 text-sm uppercase tracking-[0.25em] text-muted-foreground font-semibold">

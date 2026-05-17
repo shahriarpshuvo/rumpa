@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, CalendarHeart } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -31,20 +32,15 @@ export function Header() {
         "sticky top-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-background/85 backdrop-blur-md border-b border-adelaide-200/60 shadow-mauve"
-          : "bg-transparent border-b border-transparent"
+          : "bg-transparent border-b border-transparent",
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 sm:h-18 items-center justify-between gap-6">
           {/* brand */}
-          <Link
-            href="#hero"
-            aria-label={`${DATA.name} — home`}
-            className="flex items-center gap-2"
-          >
-            <span className="font-extrabold tracking-tight text-lg sm:text-xl text-foreground">
-              Dr. Rezwana Rumpa
-            </span>
+          <Link href="#hero" aria-label={`${DATA.name} — home`} className="flex items-center gap-2.5">
+            <Image src="/logo.svg" alt="" width={36} height={36} priority className="size-9" />
+            <span className="font-extrabold tracking-tight text-lg sm:text-xl text-foreground">Dr. Rezwana Rumpa</span>
           </Link>
 
           {/* nav — desktop */}

@@ -1,0 +1,110 @@
+---
+title: "Trying to Conceive After 35, Explained"
+description: "TTC after 35 advice from an OB-GYN. What changes biologically, which tests to ask for, and when to escalate, without the panic narrative."
+tags: [TTC, Fertility-Testing, Pre-Conception, NHS-Pathway, US-Pathway]
+thumbnail: "/content/blog/ttc-after-35/media/cover.jpg"
+publishedAt: "2026-05-30"
+updatedAt: "2026-05-30"
+---
+
+<ReviewedBy date="2026-05-30" />
+
+Many women come to my clinic asking the same thing: is it too late to start trying? Honest TTC after 35 advice acknowledges the biology without dressing it up as a crisis. The per-cycle chance of conception does fall in your mid-to-late 30s, but it falls on a slope, not a cliff. This post sets out what changes, what to test for, and when to push for a specialist referral, alongside a quick read on [how to get pregnant fast at any age](/blog/how-to-get-pregnant-fast).
+
+## What actually changes after 35
+
+The data on advanced maternal age fertility is more reassuring than the headlines suggest. Per-cycle conception odds sit around 25 percent at 35, drop toward 15 percent at 38, and reach roughly 10 percent at 40 <Cite n="1" />. Cumulative 12-month odds for women aged 35 to 39 in good health are still in the 66 to 75 percent range, depending on the cohort <Cite n="2" />.
+
+Miscarriage risk also climbs. Roughly 20 percent of pregnancies end in early loss in the early-to-mid 30s, rising to about 33 percent between 40 and 44 <Cite n="1" />. These numbers are real, and they matter, but they describe a slope.
+
+<Callout type="note">
+"Fertility falls off a cliff at 35" is a media line, not biology. The curve is a gradual slope from 32 to 37, then steeper after 38. Use the slope to plan, not to panic.
+</Callout>
+
+## Egg quality after 35, the part nobody explains well
+
+Egg quality after 35 is the bigger driver of changing fertility, more so than absolute egg count. As eggs age, the rate of chromosomal errors (aneuploidy) rises, which lowers fertilisation success and raises early miscarriage risk <Cite n="3" />.
+
+Anti-Mullerian hormone (AMH, a blood test that estimates your egg reserve) measures quantity, not quality. Antral follicle count on ultrasound adds another data point. Both numbers can decline at different rates, and neither one predicts whether you will conceive this cycle.
+
+<Callout type="clinical-tip">
+AMH does not tell you if you will get pregnant this month. It helps your doctor decide whether to escalate sooner and how your ovaries might respond if treatment becomes part of the plan.
+</Callout>
+
+For women in the South Asian diaspora and other communities where marriage and family-building happen later by cultural norm, this distinction matters. AMH testing in your early 30s can inform whether to consider fertility preservation (egg freezing) before TTC, rather than learning the picture at 38 after months of trying.
+
+## A realistic 6-month TTC plan in your late 30s
+
+Time intercourse to the fertile window every cycle. LH ovulation predictor kits remain the most cost-effective starting tool, and they pair well with [the signs of ovulation every TTC woman should know](/blog/signs-of-ovulation-ttc).
+
+Start folic acid 400 micrograms daily from before conception. Move to 5 mg if your BMI is over 30, you have diabetes, or you have a family history of neural tube defects <Cite n="3" />.
+
+Ask your partner to do [a partner sperm analysis](/blog/sperm-analysis-partner-test) in month 1, not month 6. When age is the main variable, finding a male factor in month 6 means six months lost. Sperm analysis is one of the fastest, cheapest tests in the whole pathway.
+
+Address modifiable factors in parallel. Stop smoking, cap alcohol, review BMI band with your GP, check thyroid status if you have not recently, and confirm vitamin D is in range.
+
+## What tests to ask for if TTC after 35
+
+If a patient asks what tests should I get if TTC after 35, my short list looks like this:
+
+- Day 2 to 5 of cycle: FSH, LH, oestradiol
+- Any day: AMH
+- TSH and free T4 (thyroid)
+- Prolactin
+- HbA1c and ferritin
+- Pelvic ultrasound for antral follicle count and uterine anatomy
+- Tubal patency test (HSG or HyCoSy) if you have been TTC for 3 to 6 months without success
+- Partner semen analysis, early
+
+<Callout type="clinical-tip">
+Bring this as a written list to your GP or OB-GYN appointment. It shortens the conversation, and most clinicians will order the panel when it is in front of them in writing.
+</Callout>
+
+## When to escalate to a specialist after 35
+
+When to escalate to specialist after 35 depends on age band and geography.
+
+<Callout type="uk">
+**UK pathway:** NICE NG257 recommends earlier referral if you are 36 or older, after 6 months of regular unprotected intercourse without conception <Cite n="3" />. Ask your GP for a referral by month 6 (or sooner if your cycles are irregular). For NHS-funded IVF, age and prior-children criteria apply and vary by ICB <Cite n="4" />.
+</Callout>
+
+<Callout type="us">
+**US pathway:** ACOG and ASRM recommend evaluation after 6 months of trying at age 35 or older, and after 3 months at 40 or older <Cite n="1" />. Insurance coverage for evaluation versus treatment varies widely by state and plan.
+</Callout>
+
+A common patient question is, how quickly should I see a doctor if I am 38 and TTC? The honest answer is sooner rather than later, ideally by month 3, and immediately if there are red flags. Red flags include irregular or absent periods, previous pelvic surgery, known endometriosis, a previous chemotherapy or radiation exposure, or a partner with prior fertility concerns. In these cases the standard 6-month wait does not apply. Book [when to see a fertility specialist](/blog/when-to-see-fertility-specialist) into the diary at the same time you start trying.
+
+## What this means for you
+
+TTC after 35 advice that actually helps is specific, not scary. Track your fertile window, get the basic bloods early, ask your partner to do a semen analysis in month 1, and book a fertility review at 6 months, sooner if you are 38 plus or your cycles are irregular. If you want a tailored plan that maps your age, AMH, and cycle pattern to a 6-month roadmap, that is the conversation we have together.
+
+<ConsultCTA placement="end" />
+
+<FAQ question="Is 35 really a fertility cliff?">
+No. Per-cycle odds decline gradually from your early 30s. The slope steepens after 38, but 12-month cumulative pregnancy rates for women in their mid-30s are still in the 66 to 75 percent range. Plan for the slope, do not plan for a cliff.
+</FAQ>
+
+<FAQ question="Do I need IVF straight away if I am 38 and TTC?">
+Not necessarily. Most pathways still start with basic testing and timed intercourse, with a 3 to 6 month review window. IVF earlier in the journey makes sense if AMH is very low, tubes are blocked, sperm parameters are severely affected, or you have already tried for 6 months.
+</FAQ>
+
+<FAQ question="What is a good AMH at 38?">
+There is no single "good" number. AMH declines with age and varies widely person to person. Your AMH is read in context with antral follicle count, cycle regularity, and the rest of your hormone panel. AMH predicts response to ovarian stimulation, not natural fertility.
+</FAQ>
+
+<FAQ question="Can I improve egg quality after 35?">
+Egg quality is largely set by age, but you can support what you have. Stop smoking, keep alcohol low, address vitamin D and thyroid, manage HbA1c if borderline, and consider CoQ10 with your doctor. There is no supplement that reverses age, but the modifiable factors still matter.
+</FAQ>
+
+<FAQ question="How long should I try before seeing a doctor if I am over 35?">
+NICE (UK) and ACOG (US) both recommend evaluation at 6 months for women aged 35 to 39. At 40 plus, evaluate after 3 months. Red flags (irregular periods, known endometriosis, prior pelvic surgery) mean see a doctor now, not in 6 months.
+</FAQ>
+
+<ReferenceList>
+1. ACOG. Having a Baby After Age 35: How Aging Affects Fertility and Pregnancy. https://www.acog.org/womens-health/faqs/having-a-baby-after-age-35-how-aging-affects-fertility-and-pregnancy
+2. StatPearls. Age-Related Fertility Decline. https://www.ncbi.nlm.nih.gov/books/NBK576440/
+3. NICE Guideline NG257. Fertility problems: assessment and treatment. https://www.nice.org.uk/guidance/ng257
+4. HFEA. In vitro fertilisation (IVF). https://www.hfea.gov.uk/treatments/explore-all-treatments/in-vitro-fertilisation-ivf/
+</ReferenceList>
+
+<AuthorCard />

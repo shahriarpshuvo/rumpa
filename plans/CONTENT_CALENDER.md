@@ -57,56 +57,56 @@
 
 | # | Title | Type | Cluster | Primary Keyword | KGR | Status | Length | Date |
 |---|-------|------|---------|-----------------|-----|--------|--------|------|
-| 14 | When Should Your Partner Get a Sperm Analysis? | FAQ | B | sperm analysis when should partner get tested | ✅ | outlined | 600-900 | 2026-05-15 |
-| 17 | PMOS vs PCOS, What's the Difference? | FAQ | C1 | PMOS vs PCOS what's the difference | ✅ | outlined | 600-900 | 2026-05-15 |
-| 4 | How Often Should You Have Sex to Conceive? | FAQ | A1 | how often to have intercourse to conceive | ✅ | outlined | 600-900 | 2026-05-16 |
-| 5 | How Long Does It Take to Get Pregnant? | FAQ | A1 | how long does it take to get pregnant on average | ✅ | outlined | 600-900 | 2026-05-16 |
-| 6 | How Accurate Is BBT Tracking for TTC? | FAQ | A1 | basal body temperature TTC accuracy | ✅ | outlined | 600-900 | 2026-05-17 |
-| 9 | TTC 6 Months, No Pregnancy, Next Steps | FAQ | A2 | TTC for 6 months no success what to do | ✅ | outlined | 600-900 | 2026-05-17 |
-| 37 | Did I Cause My Gestational Diabetes? | FAQ | E | did I cause gestational diabetes | ✅ | outlined | 600-900 | 2026-05-18 |
-| 41 | PCOS and Gestational Diabetes, the Link | Spoke | E (C↔E) | PCOS and gestational diabetes connection | ✅ | outlined | 1000-1500 | 2026-05-18 |
-| 45 | Pre-Pregnancy Blood Tests in the UK | Spoke | F | pre-pregnancy blood tests UK | ✅ | outlined | 1000-1500 | 2026-05-19 |
-| 46 | Pre-Pregnancy Blood Tests in the US | Spoke | F | pre-pregnancy blood tests US | ✅ | outlined | 1000-1500 | 2026-05-19 |
-| 47 | What to Do 3 Months Before TTC | Spoke | F | what to do 3 months before trying to conceive | ✅ | outlined | 1000-1500 | 2026-05-20 |
-| 48 | Male Fertility, Pre-Conception Tips | Spoke | F | male fertility pre-conception tips | ✅ | outlined | 1000-1500 | 2026-05-20 |
-| 38 | Safe Bedtime Snacks for Gestational Diabetes | Spoke | E | gestational diabetes safe snacks bedtime | ✅ | outlined | 1000-1500 | 2026-05-21 |
-| 39 | Gestational Diabetes Risk After IVF | Spoke | E (D↔E) | gestational diabetes after IVF risk | ✅ | outlined | 1000-1500 | 2026-05-21 |
-| 40 | Insulin vs Metformin for Gestational Diabetes | Spoke | E | gestational diabetes insulin vs metformin | ✅ | outlined | 1000-1500 | 2026-05-22 |
-| 34 | IVF Emotional Support, What to Expect | FAQ | D | IVF emotional support what to expect | ✅ | outlined | 600-900 | 2026-05-22 |
-| 33 | How to Prepare for Your First IVF Cycle | Spoke | D | how to prepare for first IVF cycle | ✅ | outlined | 1000-1500 | 2026-05-23 |
-| 32 | PCOS and IVF Success Rates Explained | Spoke | D (C↔D) | IVF with PCOS success rate | ✅ | outlined | 1000-1500 | 2026-05-23 |
-| 21 | PCOS and TTC, Tips That Help | Spoke | C2 | PCOS and TTC tips | ✅ | outlined | 1000-1500 | 2026-05-24 |
-| 22 | Inositol vs Metformin for PCOS Fertility | Spoke | C2 | inositol vs metformin PCOS fertility | ✅ | outlined | 1000-1500 | 2026-05-24 |
-| 23 | Letrozole vs Clomid for PCOS Ovulation | Spoke | C2 | letrozole vs clomid PCOS | ✅ | outlined | 1000-1500 | 2026-05-25 |
-| 18 | Lean PCOS, Symptoms and Fertility Impact | Spoke | C1 | lean PCOS symptoms fertility | ✅ | outlined | 1000-1500 | 2026-05-25 |
-| 19 | PCOS Pregnancy Success, What the Data Shows | Spoke | C1 | PCOS pregnancy success stories | ✅ | outlined | 1000-1500 | 2026-05-26 |
-| 10 | Unexplained Infertility, Your Next Steps | Spoke | A2 | unexplained infertility next steps | ✅ | outlined | 1000-1500 | 2026-05-26 |
-| 12 | NHS Fertility Testing, What You Get and When | Spoke | B | fertility testing UK NHS pathway | ✅ | outlined | 1000-1500 | 2026-05-27 |
-| 13 | Fertility Testing in the US, What to Ask | Spoke | B | fertility testing US what to ask doctor | ✅ | outlined | 1000-1500 | 2026-05-27 |
-| 49 | How Weight Affects Pre-Conception Fertility | Spoke | F | weight and fertility pre-conception | ✅ | outlined | 1000-1500 | 2026-05-28 |
-| 27 | When to Consider IVF After TTC | Cornerstone | D | when to consider IVF after TTC | ✅ | outlined | 1800-2500 | 2026-05-28 |
-| 1 | Trying to Conceive Tips for Your First 6 Months | Cornerstone | A1 | trying to conceive tips | ⚠️ | outlined | 1800-2500 | 2026-05-29 |
-| 11 | When to See a Fertility Specialist (UK & US) | Cornerstone | B | when to see fertility specialist | ⚠️ | outlined | 1800-2500 | 2026-05-29 |
-| 8 | Trying to Conceive After 35, Explained | Spoke | A2 | TTC after 35 advice | ⚠️ | outlined | 1000-1500 | 2026-05-30 |
-| 24 | PCOS, Insulin Resistance and Fertility | Spoke | C2 | PCOS insulin resistance fertility | ⚠️ | outlined | 1000-1500 | 2026-05-30 |
-| 25 | PCOS Diet to Conceive | Spoke | C2 | PCOS diet to conceive | ⚠️ | outlined | 1000-1500 | 2026-05-31 |
-| 26 | PCOS Cycle Tracking for Ovulation | Spoke | C2 | PCOS cycle tracking ovulation | ⚠️ | outlined | 1000-1500 | 2026-05-31 |
-| 28 | IUI vs IVF, Which Is Right for You? | Spoke | D | IUI vs IVF which is better | ⚠️ | outlined | 1000-1500 | 2026-06-01 |
-| 30 | IVF Cost in the UK, NHS vs Private | Spoke | D | IVF cost UK private vs NHS | ⚠️ | outlined | 1000-1500 | 2026-06-01 |
-| 31 | IVF Cost in the US, What Insurance Covers | Spoke | D | IVF cost US insurance coverage | ⚠️ | outlined | 1000-1500 | 2026-06-02 |
-| 35 | Gestational Diabetes Diet Plan, Explained | Cornerstone | E | gestational diabetes diet plan | 🔴 | outlined | 1800-2500 | 2026-06-03 |
-| 36 | When Is the Gestational Diabetes Test Done? | Spoke | E | gestational diabetes test when | ⚠️ | outlined | 1000-1500 | 2026-06-04 |
-| 42 | Gestational Diabetes, Long-Term Effects on Baby | FAQ | E | gestational diabetes effect on baby long term | ⚠️ | outlined | 600-900 | 2026-06-05 |
-| 43 | Pre-Conception Health Checklist | Cornerstone | F | pre-conception health checklist | ⚠️ | outlined | 1800-2500 | 2026-06-06 |
-| 44 | When to Start Folic Acid Before TTC | FAQ | F | folic acid when to start before TTC | ⚠️ | outlined | 600-900 | 2026-06-07 |
-| 50 | How Long After Stopping the Pill to Conceive? | FAQ | F | stop birth control how long to conceive | ⚠️ | outlined | 600-900 | 2026-06-08 |
-| 7 | How to Get Pregnant Fast | Cornerstone | A2 | how to get pregnant fast | 🔴 | outlined | 1800-2500 | 2026-06-09 |
-| 20 | PCOS Fertility Treatment Options Explained | Cornerstone | C2 | PCOS fertility treatment options | ⚠️ | outlined | 1800-2500 | 2026-06-10 |
-| 15 | Can You Get Pregnant With PCOS? | Cornerstone | C1 | can you get pregnant with PCOS | ⚠️ | outlined | 1800-2500 | 2026-06-11 |
-| 16 | How to Know If You Have PCOS | Spoke | C1 | how to know if you have PCOS | 🔴 | outlined | 1000-1500 | 2026-06-12 |
-| 2 | Signs of Ovulation Every TTC Woman Should Know | Spoke | A1 | signs of ovulation | 🔴 | outlined | 1000-1500 | 2026-06-13 |
-| 3 | How to Use a Fertile Window Calculator | Spoke | A1 | fertile window calculator | 🔴 | outlined | 1000-1500 | 2026-06-14 |
-| 29 | IVF Success Rates by Age (UK & US) | Spoke | D | IVF success rates by age | 🔴 | outlined | 1000-1500 | 2026-06-15 |
+| 14 | When Should Your Partner Get a Sperm Analysis? | FAQ | B | sperm analysis when should partner get tested | ✅ | drafted | 600-900 | 2026-05-15 |
+| 17 | PMOS vs PCOS, What's the Difference? | FAQ | C1 | PMOS vs PCOS what's the difference | ✅ | drafted | 600-900 | 2026-05-15 |
+| 4 | How Often Should You Have Sex to Conceive? | FAQ | A1 | how often to have intercourse to conceive | ✅ | drafted | 600-900 | 2026-05-16 |
+| 5 | How Long Does It Take to Get Pregnant? | FAQ | A1 | how long does it take to get pregnant on average | ✅ | drafted | 600-900 | 2026-05-16 |
+| 6 | How Accurate Is BBT Tracking for TTC? | FAQ | A1 | basal body temperature TTC accuracy | ✅ | drafted | 600-900 | 2026-05-17 |
+| 9 | TTC 6 Months, No Pregnancy, Next Steps | FAQ | A2 | TTC for 6 months no success what to do | ✅ | drafted | 600-900 | 2026-05-17 |
+| 37 | Did I Cause My Gestational Diabetes? | FAQ | E | did I cause gestational diabetes | ✅ | drafted | 600-900 | 2026-05-18 |
+| 41 | PCOS and Gestational Diabetes, the Link | Spoke | E (C↔E) | PCOS and gestational diabetes connection | ✅ | drafted | 1000-1500 | 2026-05-18 |
+| 45 | Pre-Pregnancy Blood Tests in the UK | Spoke | F | pre-pregnancy blood tests UK | ✅ | drafted | 1000-1500 | 2026-05-19 |
+| 46 | Pre-Pregnancy Blood Tests in the US | Spoke | F | pre-pregnancy blood tests US | ✅ | drafted | 1000-1500 | 2026-05-19 |
+| 47 | What to Do 3 Months Before TTC | Spoke | F | what to do 3 months before trying to conceive | ✅ | drafted | 1000-1500 | 2026-05-20 |
+| 48 | Male Fertility, Pre-Conception Tips | Spoke | F | male fertility pre-conception tips | ✅ | drafted | 1000-1500 | 2026-05-20 |
+| 38 | Safe Bedtime Snacks for Gestational Diabetes | Spoke | E | gestational diabetes safe snacks bedtime | ✅ | drafted | 1000-1500 | 2026-05-21 |
+| 39 | Gestational Diabetes Risk After IVF | Spoke | E (D↔E) | gestational diabetes after IVF risk | ✅ | drafted | 1000-1500 | 2026-05-21 |
+| 40 | Insulin vs Metformin for Gestational Diabetes | Spoke | E | gestational diabetes insulin vs metformin | ✅ | drafted | 1000-1500 | 2026-05-22 |
+| 34 | IVF Emotional Support, What to Expect | FAQ | D | IVF emotional support what to expect | ✅ | drafted | 600-900 | 2026-05-22 |
+| 33 | How to Prepare for Your First IVF Cycle | Spoke | D | how to prepare for first IVF cycle | ✅ | drafted | 1000-1500 | 2026-05-23 |
+| 32 | PCOS and IVF Success Rates Explained | Spoke | D (C↔D) | IVF with PCOS success rate | ✅ | drafted | 1000-1500 | 2026-05-23 |
+| 21 | PCOS and TTC, Tips That Help | Spoke | C2 | PCOS and TTC tips | ✅ | drafted | 1000-1500 | 2026-05-24 |
+| 22 | Inositol vs Metformin for PCOS Fertility | Spoke | C2 | inositol vs metformin PCOS fertility | ✅ | drafted | 1000-1500 | 2026-05-24 |
+| 23 | Letrozole vs Clomid for PCOS Ovulation | Spoke | C2 | letrozole vs clomid PCOS | ✅ | drafted | 1000-1500 | 2026-05-25 |
+| 18 | Lean PCOS, Symptoms and Fertility Impact | Spoke | C1 | lean PCOS symptoms fertility | ✅ | drafted | 1000-1500 | 2026-05-25 |
+| 19 | PCOS Pregnancy Success, What the Data Shows | Spoke | C1 | PCOS pregnancy success stories | ✅ | drafted | 1000-1500 | 2026-05-26 |
+| 10 | Unexplained Infertility, Your Next Steps | Spoke | A2 | unexplained infertility next steps | ✅ | drafted | 1000-1500 | 2026-05-26 |
+| 12 | NHS Fertility Testing, What You Get and When | Spoke | B | fertility testing UK NHS pathway | ✅ | drafted | 1000-1500 | 2026-05-27 |
+| 13 | Fertility Testing in the US, What to Ask | Spoke | B | fertility testing US what to ask doctor | ✅ | drafted | 1000-1500 | 2026-05-27 |
+| 49 | How Weight Affects Pre-Conception Fertility | Spoke | F | weight and fertility pre-conception | ✅ | drafted | 1000-1500 | 2026-05-28 |
+| 27 | When to Consider IVF After TTC | Cornerstone | D | when to consider IVF after TTC | ✅ | drafted | 1800-2500 | 2026-05-28 |
+| 1 | Trying to Conceive Tips for Your First 6 Months | Cornerstone | A1 | trying to conceive tips | ⚠️ | drafted | 1800-2500 | 2026-05-29 |
+| 11 | When to See a Fertility Specialist (UK & US) | Cornerstone | B | when to see fertility specialist | ⚠️ | drafted | 1800-2500 | 2026-05-29 |
+| 8 | Trying to Conceive After 35, Explained | Spoke | A2 | TTC after 35 advice | ⚠️ | drafted | 1000-1500 | 2026-05-30 |
+| 24 | PCOS, Insulin Resistance and Fertility | Spoke | C2 | PCOS insulin resistance fertility | ⚠️ | drafted | 1000-1500 | 2026-05-30 |
+| 25 | PCOS Diet to Conceive | Spoke | C2 | PCOS diet to conceive | ⚠️ | drafted | 1000-1500 | 2026-05-31 |
+| 26 | PCOS Cycle Tracking for Ovulation | Spoke | C2 | PCOS cycle tracking ovulation | ⚠️ | drafted | 1000-1500 | 2026-05-31 |
+| 28 | IUI vs IVF, Which Is Right for You? | Spoke | D | IUI vs IVF which is better | ⚠️ | drafted | 1000-1500 | 2026-06-01 |
+| 30 | IVF Cost in the UK, NHS vs Private | Spoke | D | IVF cost UK private vs NHS | ⚠️ | drafted | 1000-1500 | 2026-06-01 |
+| 31 | IVF Cost in the US, What Insurance Covers | Spoke | D | IVF cost US insurance coverage | ⚠️ | drafted | 1000-1500 | 2026-06-02 |
+| 35 | Gestational Diabetes Diet Plan, Explained | Cornerstone | E | gestational diabetes diet plan | 🔴 | drafted | 1800-2500 | 2026-06-03 |
+| 36 | When Is the Gestational Diabetes Test Done? | Spoke | E | gestational diabetes test when | ⚠️ | drafted | 1000-1500 | 2026-06-04 |
+| 42 | Gestational Diabetes, Long-Term Effects on Baby | FAQ | E | gestational diabetes effect on baby long term | ⚠️ | drafted | 600-900 | 2026-06-05 |
+| 43 | Pre-Conception Health Checklist | Cornerstone | F | pre-conception health checklist | ⚠️ | drafted | 1800-2500 | 2026-06-06 |
+| 44 | When to Start Folic Acid Before TTC | FAQ | F | folic acid when to start before TTC | ⚠️ | drafted | 600-900 | 2026-06-07 |
+| 50 | How Long After Stopping the Pill to Conceive? | FAQ | F | stop birth control how long to conceive | ⚠️ | drafted | 600-900 | 2026-06-08 |
+| 7 | How to Get Pregnant Fast | Cornerstone | A2 | how to get pregnant fast | 🔴 | drafted | 1800-2500 | 2026-06-09 |
+| 20 | PCOS Fertility Treatment Options Explained | Cornerstone | C2 | PCOS fertility treatment options | ⚠️ | drafted | 1800-2500 | 2026-06-10 |
+| 15 | Can You Get Pregnant With PCOS? | Cornerstone | C1 | can you get pregnant with PCOS | ⚠️ | drafted | 1800-2500 | 2026-06-11 |
+| 16 | How to Know If You Have PCOS | Spoke | C1 | how to know if you have PCOS | 🔴 | drafted | 1000-1500 | 2026-06-12 |
+| 2 | Signs of Ovulation Every TTC Woman Should Know | Spoke | A1 | signs of ovulation | 🔴 | drafted | 1000-1500 | 2026-06-13 |
+| 3 | How to Use a Fertile Window Calculator | Spoke | A1 | fertile window calculator | 🔴 | drafted | 1000-1500 | 2026-06-14 |
+| 29 | IVF Success Rates by Age (UK & US) | Spoke | D | IVF success rates by age | 🔴 | drafted | 1000-1500 | 2026-06-15 |
 
 ---
 

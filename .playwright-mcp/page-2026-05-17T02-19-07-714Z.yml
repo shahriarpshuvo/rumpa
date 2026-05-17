@@ -1,0 +1,546 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Dr. Rezwana Rumpa — home" [ref=e5] [cursor=pointer]:
+        - /url: "#hero"
+        - generic [ref=e6]: Dr. Rezwana Rumpa
+      - navigation [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: "#about"
+        - link "Services" [ref=e9] [cursor=pointer]:
+          - /url: "#services"
+        - link "Insights" [ref=e10] [cursor=pointer]:
+          - /url: "#insights"
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: "#contact"
+      - button "Open booking modal" [ref=e13]:
+        - img [ref=e14]
+        - text: Book a call
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic:
+          - generic: Dr.Rumpa
+        - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - text: Fertility/TTC Specialist
+            - text: PCOS(PMOS) Expert
+            - emphasis [ref=e24]: Reproductive Endocrinology
+          - generic [ref=e26]:
+            - text: MBBS (BD 🇧🇩)
+            - text: MRCOG, Final Part
+            - emphasis [ref=e27]: (UK 🇬🇧)
+            - text: MRCPI, Part II
+            - emphasis [ref=e28]: (Ireland 🇮🇪)
+        - generic [ref=e30]:
+          - img "Dr. Rezwana Rumpa, Fertility & PCOS Specialist" [ref=e31]
+          - generic [ref=e32]:
+            - img [ref=e33]
+            - text: TTC consults open
+          - generic [ref=e35]:
+            - img [ref=e36]
+            - text: 500+ families helped
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - text: ✦ Fertility · PCOS · Reproductive Care
+          - heading "Build the family you dream of." [level=1] [ref=e44]:
+            - text: Build the family
+            - emphasis [ref=e45]: you dream of.
+          - paragraph [ref=e46]: Board-certified fertility specialist dedicated to helping couples on their journey to parenthood. Expert in PCOS management, ovulation induction, and personalized fertility care with a compassionate, evidence-based approach.
+        - generic [ref=e47]:
+          - button "Open booking modal" [ref=e48]:
+            - img [ref=e49]
+            - text: Book Consultation
+          - link "Explore Services →" [ref=e52] [cursor=pointer]:
+            - /url: "#services"
+    - generic [ref=e53]:
+      - generic [ref=e54]: ✦ ✦ ✦
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Your guide to parenthood, and back to yourself." [level=2] [ref=e57]:
+            - text: Your
+            - emphasis [ref=e58]: guide
+            - text: to parenthood,
+            - emphasis [ref=e59]: and back to
+            - text: yourself.
+          - paragraph [ref=e61]: I am a passionate fertility specialist with extensive experience in reproductive medicine. My practice focuses on helping couples navigate the challenges of trying to conceive (TTC), with particular expertise in Polycystic Ovary Syndrome (PCOS), ovulation disorders, and personalized fertility treatment plans. I believe in a holistic, patient-centered approach that combines the latest medical advances with genuine compassion and emotional support.
+          - generic [ref=e63]: — Dr. Rumpa
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - img "Dr. Rumpa with a patient couple" [ref=e66]
+            - generic [ref=e67]: In consultation
+          - generic [ref=e68]:
+            - generic [ref=e69]: 12+
+            - generic [ref=e70]: Years Experience
+          - generic [ref=e71]:
+            - generic [ref=e72]: 500+
+            - generic [ref=e73]: Happy Families
+          - generic [ref=e74]:
+            - generic [ref=e75]: 85%
+            - generic [ref=e76]: Success Rate
+          - generic [ref=e77]:
+            - generic [ref=e78]: 15+
+            - generic [ref=e79]: Research Papers
+    - generic [ref=e81]:
+      - generic: Rumpa
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - heading "How I can help you." [level=2] [ref=e84]:
+            - text: How I can
+            - emphasis [ref=e85]: help you.
+          - paragraph [ref=e86]: Comprehensive fertility care tailored to your unique journey — diagnosis through delivery.
+        - button "Open booking modal" [ref=e87]: Ask anything →
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - img [ref=e92]
+            - generic [ref=e94]: ".01"
+          - heading "PCOS Management & Treatment" [level=3] [ref=e95]
+          - paragraph [ref=e96]: Comprehensive diagnosis and personalized treatment plans for Polycystic Ovary Syndrome, including lifestyle modification guidance, hormonal therapy, and ovulation induction to restore regular cycles and improve fertility.
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - img [ref=e100]
+            - generic [ref=e104]: ".02"
+          - heading "Fertility Consultation & Assessment" [level=3] [ref=e105]
+          - paragraph [ref=e106]: Thorough fertility evaluations for both partners including hormonal profiling, ultrasound assessment, ovarian reserve testing, and personalized treatment roadmap to optimize your chances of conception.
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - img [ref=e110]
+            - generic [ref=e112]: ".03"
+          - heading "Ovulation Induction & Monitoring" [level=3] [ref=e113]
+          - paragraph [ref=e114]: Carefully monitored ovulation stimulation with oral medications or injectables, combined with follicular tracking ultrasound to time interventions for the best possible outcome each cycle.
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - img [ref=e118]
+            - generic [ref=e121]: ".04"
+          - heading "TTC (Trying to Conceive) Support" [level=3] [ref=e122]
+          - paragraph [ref=e123]: Guided support for couples trying to conceive, including cycle tracking education, timed intercourse counseling, preconception health optimization, and emotional support throughout your fertility journey.
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - img [ref=e127]
+            - generic [ref=e130]: ".05"
+          - heading "Reproductive Endocrinology" [level=3] [ref=e131]
+          - paragraph [ref=e132]: Expert management of hormonal disorders affecting fertility including thyroid conditions, hyperprolactinemia, endometriosis, and recurrent pregnancy loss evaluation and treatment.
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - img [ref=e136]
+            - generic [ref=e139]: ".06"
+          - heading "Preconception Counseling" [level=3] [ref=e140]
+          - paragraph [ref=e141]: Proactive health assessment and optimization before trying to conceive, including genetic screening, nutrition guidance, supplement recommendations, and lifestyle modifications for both partners.
+      - generic [ref=e142]:
+        - img "Dr. Rumpa at her desk reviewing patient records" [ref=e144]
+        - generic [ref=e145]:
+          - generic [ref=e146]: “
+          - paragraph [ref=e147]: Every patient is unique. The plan should be too.
+          - paragraph [ref=e148]: — Dr. Rezwana Rumpa, Fertility Specialist
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - text: PCOS Management
+        - generic [ref=e152]: ✦
+      - generic [ref=e153]:
+        - text: Ovulation Induction
+        - generic [ref=e154]: ✦
+      - generic [ref=e155]:
+        - text: Preconception Care
+        - generic [ref=e156]: ✦
+      - generic [ref=e157]:
+        - text: TTC Support
+        - generic [ref=e158]: ✦
+      - generic [ref=e159]:
+        - text: Reproductive Endocrinology
+        - generic [ref=e160]: ✦
+      - generic [ref=e161]:
+        - text: Fertility Consultation
+        - generic [ref=e162]: ✦
+      - generic [ref=e163]:
+        - text: Cycle Monitoring
+        - generic [ref=e164]: ✦
+      - generic [ref=e165]:
+        - text: Hormonal Profiling
+        - generic [ref=e166]: ✦
+      - generic [ref=e167]:
+        - text: PCOS Management
+        - generic [ref=e168]: ✦
+      - generic [ref=e169]:
+        - text: Ovulation Induction
+        - generic [ref=e170]: ✦
+      - generic [ref=e171]:
+        - text: Preconception Care
+        - generic [ref=e172]: ✦
+      - generic [ref=e173]:
+        - text: TTC Support
+        - generic [ref=e174]: ✦
+      - generic [ref=e175]:
+        - text: Reproductive Endocrinology
+        - generic [ref=e176]: ✦
+      - generic [ref=e177]:
+        - text: Fertility Consultation
+        - generic [ref=e178]: ✦
+      - generic [ref=e179]:
+        - text: Cycle Monitoring
+        - generic [ref=e180]: ✦
+      - generic [ref=e181]:
+        - text: Hormonal Profiling
+        - generic [ref=e182]: ✦
+    - generic [ref=e184]:
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - heading "Insights & Education." [level=2] [ref=e187]:
+            - text: Insights &
+            - emphasis [ref=e188]: Education.
+          - paragraph [ref=e189]: Evidence-based fertility guidance, written for couples who want to understand — not just be told.
+        - link "View all articles →" [ref=e190] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e191]:
+        - 'link "PCOS ✦ Featured 2 min read PCOS · May 1, 2026 Understanding PCOS: A Complete Guide for Women Trying to Conceive Polycystic Ovary Syndrome affects 1 in 10 women of reproductive age. Learn about the symptoms, diagnosis, and fertility treatment options available. Dr. Rezwana Rumpa Read article →" [ref=e192] [cursor=pointer]':
+          - /url: /blog/understanding-pcos-guide-ttc
+          - generic [ref=e193]:
+            - generic [ref=e194]: PCOS
+            - generic [ref=e195]: ✦ Featured
+            - generic [ref=e196]: 2 min read
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - emphasis [ref=e199]: PCOS
+              - generic [ref=e200]: ·
+              - generic [ref=e201]: May 1, 2026
+            - 'heading "Understanding PCOS: A Complete Guide for Women Trying to Conceive" [level=3] [ref=e202]':
+              - text: "Understanding PCOS: A Complete Guide for Women"
+              - emphasis [ref=e203]: Trying to Conceive
+            - paragraph [ref=e204]: Polycystic Ovary Syndrome affects 1 in 10 women of reproductive age. Learn about the symptoms, diagnosis, and fertility treatment options available.
+            - generic [ref=e205]:
+              - strong [ref=e207]: Dr. Rezwana Rumpa
+              - generic [ref=e208]: Read article →
+        - generic [ref=e209]:
+          - 'link "Preconception Preconception · 2 min Preparing for Pregnancy: Your Preconception Health Checklist Apr 15, 2026 · Read →" [ref=e210] [cursor=pointer]':
+            - /url: /blog/preconception-health-checklist
+            - generic [ref=e212]: Preconception
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - emphasis [ref=e215]: Preconception
+                - generic [ref=e216]: ·
+                - generic [ref=e217]: 2 min
+              - 'heading "Preparing for Pregnancy: Your Preconception Health Checklist" [level=3] [ref=e218]':
+                - text: "Preparing for Pregnancy: Your Preconception Health"
+                - emphasis [ref=e219]: Checklist
+              - generic [ref=e220]: Apr 15, 2026 · Read →
+          - 'link "Treatment Treatment · 2 min Ovulation Induction: What to Expect During Treatment Mar 20, 2026 · Read →" [ref=e221] [cursor=pointer]':
+            - /url: /blog/ovulation-induction-what-to-expect
+            - generic [ref=e223]: Treatment
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - emphasis [ref=e226]: Treatment
+                - generic [ref=e227]: ·
+                - generic [ref=e228]: 2 min
+              - 'heading "Ovulation Induction: What to Expect During Treatment" [level=3] [ref=e229]':
+                - text: "Ovulation Induction: What to"
+                - emphasis [ref=e230]: Expect
+                - text: During Treatment
+              - generic [ref=e231]: Mar 20, 2026 · Read →
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - heading "Your fertility journey, step by step." [level=2] [ref=e235]:
+          - text: Your fertility
+          - text: journey,
+          - emphasis [ref=e236]: step by step.
+        - paragraph [ref=e237]: Clear, predictable, paced to your needs. Here's what working together looks like — from first hello to first heartbeat.
+      - generic [ref=e238]:
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - img "Dr. Rumpa taking history from a couple" [ref=e242]
+            - generic [ref=e243]: "01"
+          - generic [ref=e244]:
+            - heading "Consultation" [level=3] [ref=e245]
+            - paragraph [ref=e246]: We meet — in person or online — to review your history, goals, and concerns. No procedures on day one, just a real conversation.
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - img "Dr. Rumpa reviewing imaging on a lightbox" [ref=e250]
+            - generic [ref=e251]: "02"
+          - generic [ref=e252]:
+            - heading "Diagnosis & Plan" [level=3] [ref=e253]
+            - paragraph [ref=e254]: Targeted blood work, ultrasound, and partner assessment. From the results we build a personalized treatment roadmap together.
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - img "Dr. Rumpa writing a treatment plan at her desk" [ref=e258]
+            - generic [ref=e259]: "03"
+          - generic [ref=e260]:
+            - heading "Ongoing Care" [level=3] [ref=e261]
+            - paragraph [ref=e262]: Cycle monitoring, medication adjustments, lifestyle coaching, and emotional support. Iteration, not guesswork.
+    - generic [ref=e264]:
+      - generic [ref=e265]:
+        - paragraph [ref=e266]:
+          - text: “She didn't just treat me —
+          - text: she walked beside us.”
+        - paragraph [ref=e267]: Trusted by 500+ families across Bangladesh
+      - generic [ref=e268]:
+        - figure "FR Fatima R. PCOS Patient · Now mother" [ref=e269]:
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - img [ref=e272]
+              - img [ref=e274]
+              - img [ref=e276]
+              - img [ref=e278]
+              - img [ref=e280]
+            - generic [ref=e282]: “
+          - blockquote [ref=e283]:
+            - emphasis [ref=e284]: After struggling with PCOS for years
+            - generic [ref=e285]: ","
+            - text: Dr. Rumpa helped me understand my condition and created a treatment plan that worked. Within 6 months, we received the best news of our lives. She truly cares about her patients.
+          - generic [ref=e286]:
+            - generic [ref=e287]: FR
+            - generic [ref=e288]:
+              - generic [ref=e289]: Fatima R.
+              - generic [ref=e290]: PCOS Patient · Now mother
+        - figure "NT Nusrat & Tanvir TTC Couple · Conceived 2025" [ref=e291]:
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - img [ref=e294]
+              - img [ref=e296]
+              - img [ref=e298]
+              - img [ref=e300]
+              - img [ref=e302]
+            - generic [ref=e304]: “
+          - blockquote [ref=e305]:
+            - emphasis [ref=e306]: We had been trying to conceive for over two years
+            - generic [ref=e307]: .
+            - text: Dr. Rumpa's thorough assessment identified the issue quickly, and her compassionate approach made the entire journey bearable. We are forever grateful.
+          - generic [ref=e308]:
+            - generic [ref=e309]: NT
+            - generic [ref=e310]:
+              - generic [ref=e311]: Nusrat & Tanvir
+              - generic [ref=e312]: TTC Couple · Conceived 2025
+        - figure "SA Sharmin A. PCOS Patient" [ref=e313]:
+          - generic [ref=e314]:
+            - generic [ref=e315]:
+              - img [ref=e316]
+              - img [ref=e318]
+              - img [ref=e320]
+              - img [ref=e322]
+              - img [ref=e324]
+            - generic [ref=e326]: “
+          - blockquote [ref=e327]: Dr. Rumpa doesn't just treat you medically — she supports you emotionally too. Her knowledge of PCOS is exceptional, and she explains everything in a way that's easy to understand. Highly recommended!
+          - generic [ref=e328]:
+            - generic [ref=e329]: SA
+            - generic [ref=e330]:
+              - generic [ref=e331]: Sharmin A.
+              - generic [ref=e332]: PCOS Patient
+        - figure "TR Taslima & Rafiq Fertility Treatment Couple" [ref=e333]:
+          - generic [ref=e334]:
+            - generic [ref=e335]:
+              - img [ref=e336]
+              - img [ref=e338]
+              - img [ref=e340]
+              - img [ref=e342]
+              - img [ref=e344]
+            - generic [ref=e346]: “
+          - blockquote [ref=e347]:
+            - emphasis [ref=e348]: From our first consultation
+            - generic [ref=e349]: ","
+            - text: we felt hopeful. Dr. Rumpa's personalized approach and constant monitoring made all the difference. She celebrated every milestone with us as if it were her own.
+          - generic [ref=e350]:
+            - generic [ref=e351]: TR
+            - generic [ref=e352]:
+              - generic [ref=e353]: Taslima & Rafiq
+              - generic [ref=e354]: Fertility Treatment Couple
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - generic [ref=e358]: § 06 — Credentials
+        - heading "Trained at the best. Practicing where it matters." [level=2] [ref=e359]:
+          - text: Trained at the
+          - emphasis [ref=e360]: best.
+          - text: Practicing where it
+          - emphasis [ref=e361]: matters.
+      - figure [ref=e362]:
+        - generic [ref=e363]:
+          - img "Dr. Rumpa in surgical scrubs at the operating theater" [ref=e364]
+          - generic [ref=e366]:
+            - generic [ref=e367]: Surgical practice
+            - generic [ref=e368]: Obs & Gynae · Operating theater
+      - generic [ref=e369]:
+        - heading "Education" [level=3] [ref=e370]
+        - generic [ref=e371]:
+          - article [ref=e372]:
+            - generic [ref=e373]:
+              - generic [ref=e374]: ★ Fellowship
+              - generic [ref=e375]: ".01"
+            - heading "MRCOG" [level=4] [ref=e376]
+            - generic [ref=e377]: Final Part
+            - paragraph [ref=e378]: Royal College of Obstetricians & Gynaecologists
+            - paragraph [ref=e379]: London, UK
+          - article [ref=e380]:
+            - generic [ref=e381]:
+              - generic [ref=e382]: ★ Fellowship
+              - generic [ref=e383]: ".02"
+            - heading "MRCPI" [level=4] [ref=e384]
+            - generic [ref=e385]: Obs & Gynae · Final Part
+            - paragraph [ref=e386]: Royal College of Physicians of Ireland
+            - paragraph [ref=e387]: Dublin, Ireland
+          - article [ref=e388]:
+            - generic [ref=e389]:
+              - generic [ref=e390]: ★ Fellowship
+              - generic [ref=e391]: ".03"
+            - heading "MBBS" [level=4] [ref=e392]
+            - generic [ref=e393]: January 2013
+            - paragraph [ref=e394]: Shaheed Monsur Ali Medical College, Dhaka University
+            - paragraph [ref=e395]: Dhaka, Bangladesh
+      - generic [ref=e396]:
+        - generic [ref=e397]:
+          - heading "Professional Experience" [level=3] [ref=e398]
+          - list [ref=e399]:
+            - listitem [ref=e400]:
+              - generic [ref=e401]:
+                - heading "Senior Medical Officer, Obs & Gynae Department" [level=4] [ref=e402]
+                - generic [ref=e403]: 3 Years
+              - generic [ref=e404]: BRB Hospitals Ltd.
+        - generic [ref=e405]:
+          - heading "Honorary Training (Obs & Gynae)" [level=3] [ref=e406]
+          - list [ref=e407]:
+            - listitem [ref=e408]:
+              - generic [ref=e409]:
+                - heading "Dhaka Medical College" [level=4] [ref=e410]
+                - generic [ref=e411]: 1.5 Years
+            - listitem [ref=e412]:
+              - generic [ref=e413]:
+                - heading "250 Bedded Mohammad Ali Hospital" [level=4] [ref=e414]
+                - generic [ref=e415]: 6 Months
+              - generic [ref=e416]: Bogura
+    - generic [ref=e418]:
+      - generic [ref=e419]:
+        - heading "Questions worth asking." [level=2] [ref=e420]:
+          - text: Questions
+          - emphasis [ref=e421]: worth asking.
+        - paragraph [ref=e422]: The things patients usually want to know before booking.
+      - generic [ref=e423]:
+        - region [ref=e424]:
+          - heading "01 What does the first consultation involve?" [level=3] [ref=e426]:
+            - button "01 What does the first consultation involve?" [ref=e427]:
+              - generic [ref=e428]:
+                - generic [ref=e429]: "01"
+                - generic [ref=e430]: What does the first consultation involve?
+              - img
+        - region [ref=e431]:
+          - heading "02 How long does PCOS treatment usually take?" [level=3] [ref=e433]:
+            - button "02 How long does PCOS treatment usually take?" [ref=e434]:
+              - generic [ref=e435]:
+                - generic [ref=e436]: "02"
+                - generic [ref=e437]: How long does PCOS treatment usually take?
+              - img
+        - region [ref=e438]:
+          - heading "03 Do you offer IVF? Or only initial fertility care?" [level=3] [ref=e440]:
+            - button "03 Do you offer IVF? Or only initial fertility care?" [ref=e441]:
+              - generic [ref=e442]:
+                - generic [ref=e443]: "03"
+                - generic [ref=e444]: Do you offer IVF? Or only initial fertility care?
+              - img
+        - region [ref=e445]:
+          - heading "04 What should I expect to spend?" [level=3] [ref=e447]:
+            - button "04 What should I expect to spend?" [ref=e448]:
+              - generic [ref=e449]:
+                - generic [ref=e450]: "04"
+                - generic [ref=e451]: What should I expect to spend?
+              - img
+        - region [ref=e452]:
+          - heading "05 How soon can I start trying after a treatment plan?" [level=3] [ref=e454]:
+            - button "05 How soon can I start trying after a treatment plan?" [ref=e455]:
+              - generic [ref=e456]:
+                - generic [ref=e457]: "05"
+                - generic [ref=e458]: How soon can I start trying after a treatment plan?
+              - img
+        - region [ref=e459]:
+          - heading "06 Do you see male partners too?" [level=3] [ref=e461]:
+            - button "06 Do you see male partners too?" [ref=e462]:
+              - generic [ref=e463]:
+                - generic [ref=e464]: "06"
+                - generic [ref=e465]: Do you see male partners too?
+              - img
+        - region [ref=e466]:
+          - heading "07 What if treatment doesn't work the first cycle?" [level=3] [ref=e468]:
+            - button "07 What if treatment doesn't work the first cycle?" [ref=e469]:
+              - generic [ref=e470]:
+                - generic [ref=e471]: "07"
+                - generic [ref=e472]: What if treatment doesn't work the first cycle?
+              - img
+        - region [ref=e473]:
+          - heading "08 Can I book virtually if I'm outside Dhaka?" [level=3] [ref=e475]:
+            - button "08 Can I book virtually if I'm outside Dhaka?" [ref=e476]:
+              - generic [ref=e477]:
+                - generic [ref=e478]: "08"
+                - generic [ref=e479]: Can I book virtually if I'm outside Dhaka?
+              - img
+    - generic [ref=e481]:
+      - generic [ref=e482]: ✦ ✦ ✦
+      - generic [ref=e483]:
+        - generic [ref=e484]:
+          - generic [ref=e485]: ★ Take the next step
+          - heading "Ready to start your journey?" [level=2] [ref=e486]:
+            - text: Ready to
+            - emphasis [ref=e487]: start your journey?
+          - paragraph [ref=e488]: First consultations book within a week. Whether you're early in the journey or have been trying for years, the next step is a conversation.
+        - generic [ref=e489]:
+          - button "Open booking modal" [ref=e490]:
+            - img [ref=e491]
+            - text: Book Consultation
+          - link "Ask a question" [ref=e494] [cursor=pointer]:
+            - /url: "#contact"
+            - img [ref=e495]
+            - text: Ask a question
+          - link "or call +880-1XXX-XXXXXX" [ref=e497] [cursor=pointer]:
+            - /url: tel:+8801
+    - generic [ref=e498]:
+      - generic [ref=e499]:
+        - generic [ref=e500]:
+          - generic [ref=e501]: Dr. Rezwana Rumpa
+          - paragraph [ref=e502]: Helping you build the family you dream of
+        - generic [ref=e503]:
+          - heading "Explore" [level=3] [ref=e504]
+          - list [ref=e505]:
+            - listitem [ref=e506]:
+              - link "Home" [ref=e507] [cursor=pointer]:
+                - /url: "#hero"
+            - listitem [ref=e508]:
+              - link "About" [ref=e509] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e510]:
+              - link "Services" [ref=e511] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e512]:
+              - link "Blog" [ref=e513] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e514]:
+              - link "Contact" [ref=e515] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e516]:
+          - heading "Care" [level=3] [ref=e517]
+          - list [ref=e518]:
+            - listitem [ref=e519]:
+              - link "How it works" [ref=e520] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e521]:
+              - link "Credentials" [ref=e522] [cursor=pointer]:
+                - /url: "#credentials"
+            - listitem [ref=e523]:
+              - link "FAQ" [ref=e524] [cursor=pointer]:
+                - /url: "#faq"
+            - listitem [ref=e525]:
+              - link "Patient stories" [ref=e526] [cursor=pointer]:
+                - /url: "#testimonials"
+        - generic [ref=e527]:
+          - heading "Contact" [level=3] [ref=e528]
+          - list [ref=e529]:
+            - listitem [ref=e530]:
+              - link "dr.rezwana@example.com" [ref=e531] [cursor=pointer]:
+                - /url: mailto:dr.rezwana@example.com
+            - listitem [ref=e532]:
+              - link "+880-1XXX-XXXXXX" [ref=e533] [cursor=pointer]:
+                - /url: tel:+8801
+            - listitem [ref=e534]: Dhaka, Bangladesh
+          - generic [ref=e535]:
+            - link "LinkedIn" [ref=e536] [cursor=pointer]:
+              - /url: https://linkedin.com/in/drrezwanarumpa
+              - img [ref=e537]
+            - link "Facebook" [ref=e539] [cursor=pointer]:
+              - /url: https://facebook.com/drrezwanarumpa
+              - img [ref=e540]
+      - generic [ref=e543]:
+        - generic [ref=e544]: © 2026 Dr. Rezwana Rumpa. All rights reserved.
+        - generic [ref=e545]: Built with care.

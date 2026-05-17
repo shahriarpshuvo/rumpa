@@ -1,0 +1,130 @@
+---
+title: "How to Prepare for Your First IVF Cycle: 90-Day Plan"
+description: "How to prepare for first IVF cycle in 90 days. An OB-GYN's week-by-week plan for bloods, supplements, lifestyle, and what to ask your clinic."
+tags: [IVF, Pre-Conception, Fertility-Testing, Lifestyle, Nutrition]
+thumbnail: "/content/blog/first-ivf-cycle-prep/media/cover.jpg"
+publishedAt: "2026-05-23"
+updatedAt: "2026-05-23"
+---
+
+"What should I do 90 days before IVF?" is the question I get from almost every patient at their first pre-IVF appointment. How to prepare for first IVF cycle is less about doing everything and more about doing a few evidence-backed things consistently across roughly three months. That window matters: the eggs being matured for your retrieval are recruited from a cohort that develops over about 90 days, so the changes you make now are the ones that actually reach the cycle.
+
+If you are still deciding, [when to consider IVF after TTC](/blog/when-to-consider-ivf-after-ttc) and [IVF success rates by age](/blog/ivf-success-rates-by-age) cover the framing. This post assumes you have a start date and want to use the weeks well.
+
+<AuthorCard />
+
+## The 90-Day Window, Why It Matters
+
+Folliculogenesis (the process from antral follicle recruitment to a mature egg ready for retrieval) takes around three months. The eggs your clinic will collect are already being prepared before your first injection.
+
+That is good news. It means diet, sleep, alcohol, smoking, exercise, and key supplements have a window where they can plausibly reach the cohort. It also means perfectionism is unnecessary: pick two or three changes you can keep for 12 weeks, not ten you will drop in two.
+
+<Callout type="tip">Most patients overhaul their lives in week one and quietly stop by week four. Choose the smallest set of changes you can hold to the day of retrieval.</Callout>
+
+A useful structure: weeks 1 to 4 set foundations (bloods, supplements, diet, alcohol stop). Weeks 5 to 8 lock in sleep and exercise. Weeks 9 to 12 are stims and retrieval, where lifestyle changes shift to safety rules.
+
+## Pre-Cycle Bloods and Scans, What to Expect
+
+IVF pre-cycle bloods and scans are the data your protocol is built on. Expect a hormone panel, a uterine and ovarian assessment, and partner testing.
+
+A typical workup includes:
+
+- AMH (anti-Müllerian hormone, an estimate of egg reserve), FSH, LH, oestradiol on day 2 or 3 of your cycle
+- TSH, prolactin, vitamin D
+- Antral follicle count (AFC) via transvaginal ultrasound
+- Saline infusion sonogram or hysteroscopy if there is any suspicion of polyps, fibroids, or adhesions
+- Partner: semen analysis, infection screen
+
+<Cite source="HFEA" url="https://www.hfea.gov.uk/treatments/explore-all-treatments/in-vitro-fertilisation-ivf/" />The [HFEA guide to IVF treatment steps](https://www.hfea.gov.uk/treatments/explore-all-treatments/in-vitro-fertilisation-ivf/) and <Cite source="NICE NG257" url="https://www.nice.org.uk/guidance/ng257" />the [NICE fertility problems assessment and treatment guideline](https://www.nice.org.uk/guidance/ng257) set out the UK-side baseline. US clinics follow ASRM-aligned protocols with more variation between centres.
+
+If you have PCOS or suspected PCOS, ask about an antagonist protocol and OHSS prevention before signing the treatment plan. [PCOS and IVF success rates explained](/blog/ivf-with-pcos-success) covers what to ask for and why.
+
+Questions worth bringing to the pre-cycle appointment:
+
+- What protocol are you recommending and why this one for me?
+- What is my predicted egg yield and OHSS risk?
+- Will we plan a fresh transfer or a freeze-all?
+- What is your live birth rate per started cycle in my age band?
+
+## Supplements Before IVF, What the Evidence Supports
+
+What supplements to take before IVF is the question most patients have already half-answered with a Google search. The evidence-backed shortlist is shorter than the marketing list.
+
+- **Prenatal multivitamin** with 400 to 800 mcg folic acid: standard. 5 mg if BMI is over 30, on metformin, or with a history of neural tube defects.
+- **Vitamin D**: replete to at least 75 nmol/L if deficient.
+- **Omega-3 (DHA/EPA)**: supportive evidence for embryo quality and implantation.
+- **CoQ10 200 to 600 mg/day**: mitochondrial support for oocytes. Start 8 to 12 weeks before stims. Evidence is strongest in women over 35 or with prior poor response.
+- **DHEA and melatonin**: case-selected, doctor-prescribed only. DHEA has RCT support in diminished ovarian reserve (low AMH) and is not a blanket recommendation. Melatonin is investigational.
+
+<Cite source="RBMO 2023" url="https://www.rbmojournal.com/article/S1472-6483(23)00869-6/fulltext" />The [evidence-based review of nutritional supplements and IVF](https://www.rbmojournal.com/article/S1472-6483(23)00869-6/fulltext) in RBMO is a good shared reference if you want to bring something to your clinician. Avoid blanket high-dose antioxidant cocktails marketed online; they have not been tested as combinations and some may interfere with oocyte biology.
+
+<Callout type="warning">Supplements are adjuncts, not protocols. Run any new addition past your clinician, particularly if you are on metformin, thyroid medication, or blood-pressure medication.</Callout>
+
+## Diet, Exercise and Sleep
+
+A Mediterranean-pattern diet (lean protein, leafy greens, whole grains, oily fish, olive oil, nuts, legumes) has the most consistent fertility data. You do not need to be perfect; you do need to be steady.
+
+Other useful targets:
+
+- Caffeine capped at one cup of coffee per day
+- Alcohol minimised in the lead-up to stims and stopped before egg collection. Many clinicians ask patients to stop alcohol 3 months prior; at minimum, stop the cycle before stims begin
+- Smoking and vaping stopped at least 3 months prior
+- Sleep 7 to 9 hours; melatonin secretion supports oocyte quality and your stress response
+- A daily walk plus 2 to 3 sessions of moderate movement
+
+Exercise during the IVF stimulation phase needs to change. Once stims start, your ovaries enlarge and become heavier. High-impact exercise (running, HIIT, heavy lifting) raises the risk of ovarian torsion, a surgical emergency. Switch to walking, gentle yoga, swimming, or Pilates from the first injection.
+
+<Callout type="warning">Stop high-impact exercise the day stims begin. Resume only after your clinic clears you post-retrieval.</Callout>
+
+## Egg Retrieval Recovery, What the Next 7 Days Look Like
+
+Egg retrieval recovery is shorter than most patients expect and longer than they plan for.
+
+The procedure itself is a short sedation with vaginal-probe needle aspiration of the follicles. Most patients are home within a few hours. Expect bloating, mild cramping, and light spotting for 24 to 72 hours. Plan pelvic rest, hydration with electrolytes, and no heavy lifting for around a week.
+
+The important thing to watch for is OHSS (ovarian hyperstimulation syndrome). Red flags include:
+
+- Rapid weight gain of more than 2 kg in a day
+- Severe abdominal pain not eased by paracetamol
+- Reduced urine output
+- Breathlessness or chest tightness
+
+Any of these warrant calling your clinic the same day. PCOS, high AMH, and high antral follicle count raise OHSS risk; modern antagonist protocols with agonist triggers and freeze-all transfers have substantially reduced severe OHSS. The [ASRM patient resources on IVF preparation](https://www.reproductivefacts.org/) cover post-retrieval guidance in patient-friendly language.
+
+## Mental, Logistical and Work Prep
+
+The non-medical prep is the part most patients underestimate.
+
+- Block calendar space for monitoring scans (every 2 to 3 days during stims) and the retrieval day plus 24 hours after
+- Tell one trusted person at work if it helps; you are not obliged to disclose
+- Arrange childcare and transport for retrieval day (sedation rules out driving)
+- Book a counselling slot at your clinic before stims begin, not after a setback
+- Read [IVF emotional support, what to expect](/blog/ivf-emotional-support) and share the two-week wait section with your partner
+
+<Callout type="uk">
+UK readers: every HFEA-licensed clinic must offer counselling. Use it preventatively. Your GP can also refer to NHS talking therapies if anxiety is significant.
+</Callout>
+
+<Callout type="us">
+US readers: SART-affiliated clinics typically have an in-house psychologist or social worker. RESOLVE offers free peer-support groups in most regions, and employer EAPs often fund initial sessions.
+</Callout>
+
+## What This Means for You
+
+How to prepare for first IVF cycle is a 90-day project with a small number of moving parts: bloods that drive the protocol, two or three supplements your clinician agrees with, a Mediterranean-pattern diet, low-impact exercise from stims onward, decent sleep, alcohol stopped, and counselling lined up before you need it. Do those, and you walk into stims with the best version of the cycle.
+
+<ConsultCTA />
+
+<FAQ question="How long before IVF should I start CoQ10?">8 to 12 weeks before stimulation, at 200 to 600 mg/day, has the strongest evidence in women over 35 or with prior poor response. Discuss timing and dose with your clinician.</FAQ>
+
+<FAQ question="Can I exercise during stims?">Yes, low-impact only: walking, gentle yoga, swimming, Pilates. Stop running, HIIT, and heavy lifting from the first injection because enlarged ovaries raise the risk of torsion. Resume after your clinic clears you post-retrieval.</FAQ>
+
+<FAQ question="What is OHSS and how do I spot it?">Ovarian hyperstimulation syndrome is an exaggerated response to fertility drugs. Red flags after retrieval include rapid weight gain over 2 kg in a day, severe abdominal pain, reduced urine output, and breathlessness. Call your clinic the same day if any of these appear.</FAQ>
+
+<FAQ question="Should I take DHEA before IVF?">Only if your AMH is low and your clinician recommends it. RCT evidence supports DHEA in diminished ovarian reserve, not as a blanket pre-IVF supplement. It is doctor-prescribed in the UK and available OTC in the US, but self-prescribing is not advised.</FAQ>
+
+<FAQ question="Is acupuncture worth it before IVF?">Evidence is mixed. Some patients find it useful for stress and sleep, which are reasonable goals. It is not a substitute for any clinical step and should be from a practitioner experienced with IVF cycles if you choose to use it.</FAQ>
+
+<ReviewedBy date="2026-05-23" />
+
+<ReferenceList />

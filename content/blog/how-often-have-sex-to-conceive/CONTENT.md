@@ -1,0 +1,99 @@
+---
+title: "How Often to Have Intercourse to Conceive: A Clear Answer"
+description: "How often to have intercourse to conceive? An OB-GYN reconciles the ACOG and NHS advice, addresses sperm-quality myths, and offers a sustainable middle path."
+tags: [TTC, Ovulation, Pre-Conception, NHS-Pathway, US-Pathway]
+thumbnail: "/content/blog/how-often-have-sex-to-conceive/media/cover.jpg"
+publishedAt: "2026-05-16"
+updatedAt: "2026-05-16"
+---
+
+If you've been TTC and you're wondering how often to have intercourse to conceive, you're not alone. Most couples ask me this question within the first two months of trying. The advice online is conflicting, sometimes contradictory, and that uncertainty is part of what brings people in.
+
+There is a clear answer. Two of them, in fact, and they don't contradict each other once you know which couple each one is written for.
+
+<AuthorCard />
+
+## The Two Main Recommendations (and Why They Differ)
+
+The two major guidelines on timed intercourse TTC are both correct. They just target different couples.
+
+ACOG (US) recommends intercourse every day or every other day during the fertile window, roughly cycle days 8 to 19 in a 26 to 32 day cycle. NHS (UK) recommends every 2 to 3 days across the whole cycle, with no fertile-window tracking required.
+
+<Cite source="ACOG" url="https://www.acog.org/womens-health/experts-and-stories/the-latest/trying-to-get-pregnant-heres-when-to-have-sex" />
+<Cite source="NHS" url="https://www.nhs.uk/pregnancy/trying-for-a-baby/how-to-get-pregnant/" />
+
+The ACOG model suits couples who can identify their fertile window without it becoming a stress source. The NHS model suits couples who would rather not track and prefer a lower-pressure rhythm. Both produce equivalent cumulative pregnancy rates in healthy under-35 couples. Our overview of [TTC tips for your first six months](/blog/trying-to-conceive-tips-first-6-months) walks through which approach tends to fit which kind of couple.
+
+<Callout type="tip">
+Patients who track ovulation well usually do better with the ACOG model. Patients who feel anxious about tracking usually do better with the NHS rhythm. There is no third "best" answer hidden between them.
+</Callout>
+
+## How the Fertile Window Actually Works
+
+Fertile window sex frequency depends on two biological facts. Sperm survive in the female reproductive tract for up to 5 days. The egg is viable for only 12 to 24 hours after ovulation.
+
+Together that gives a 6-day fertile window: the 5 days before ovulation plus ovulation day itself. The highest per-cycle pregnancy chance comes from intercourse in the 2 to 3 days *before* ovulation, not on ovulation day. Knowing the [signs of ovulation to watch for](/blog/signs-of-ovulation-ttc) and [using a fertile window calculator](/blog/how-to-use-fertile-window-calculator) sharpens this considerably.
+
+<Cite source="ACOG" url="https://www.acog.org/womens-health/faqs/fertility-awareness-based-methods-of-family-planning" />
+
+## Does Daily Sex Hurt Sperm Quality?
+
+Patients ask me is every other day better than every day for TTC, as if daily intercourse depletes sperm. Current evidence does not support that worry for most men.
+
+In men with normal semen parameters, daily ejaculation does not meaningfully reduce per-cycle pregnancy rates. The classic Wilcox study and follow-up reviews show that frequent intercourse during the fertile window produces the highest conception rates. The "save it up" myth (long abstinence improves sperm quality and frequency outcomes) is the opposite of what the data shows. Abstinence beyond 5 days can actually reduce sperm motility.
+
+<Cite source="PubMed" url="https://pubmed.ncbi.nlm.nih.gov/9130771/" />
+
+In men with already low counts, an every-other-day rhythm may be preferred. That is a conversation worth having if a semen analysis has come back borderline.
+
+## How Much Sex Is Too Much When Trying to Conceive?
+
+This is a real question patients ask me, often with embarrassment. Physiologically, no, daily sex during the fertile window will not lower your chance. The real risk is not biological.
+
+Scheduled intercourse is the single most common reason couples burn out by month 4 of TTC. Performance pressure, resentment, and the quiet dread of "we have to tonight" all reduce the spontaneity that made conception attempts pleasant in the first place. The damage is to the relationship, not the cycle.
+
+A sustainable middle path looks like this: identify a 6-day window using cycle tracking or LH testing, plan for intercourse every other day across that window, and treat the rest of the cycle as off-duty. Most couples can hold that rhythm for the 6 to 12 cycles a healthy under-35 couple needs.
+
+## When Frequency Stops Being the Issue
+
+If you've timed correctly for 6 to 12 cycles and are not pregnant, frequency is no longer the lever to focus on. This is the point to consider basic fertility testing, ovulation confirmation, a semen analysis, AMH, and tubal patency.
+
+<Callout type="uk">
+**UK readers.** The NHS will typically assess after 12 months of regular intercourse if you are under 35, or 6 months at 35 or older. Your GP is the entry point.
+</Callout>
+
+<Callout type="us">
+**US readers.** ASRM uses the same 12 / 6 threshold, but US private clinics will usually evaluate sooner if requested and insurance allows.
+</Callout>
+
+For a fuller decision tree, see [when to see a fertility specialist](/blog/when-to-see-fertility-specialist).
+
+## FAQ
+
+<FAQ question="Does the position matter for conception?">
+No high-quality evidence supports any particular position improving conception odds. Use what is comfortable and sustainable.
+</FAQ>
+
+<FAQ question="Should I lie still after sex?">
+The benefit is modest at best. A few minutes of resting is reasonable; longer is not necessary.
+</FAQ>
+
+<FAQ question="Is morning sex better than evening?">
+Some small studies suggest morning sperm parameters are slightly higher. The difference is small and likely irrelevant for most couples. Pick the time you will actually keep up.
+</FAQ>
+
+<FAQ question="Do I need to have sex on ovulation day specifically?">
+No. The 2 to 3 days before ovulation are the highest-yield. Ovulation day itself is still fertile, but you are not "missing" the window if you didn't catch the day exactly.
+</FAQ>
+
+<FAQ question="Can stress about timing actually delay pregnancy?">
+Severe chronic stress can affect ovulation. The everyday anxiety of TTC is unlikely to be the cause of delay, but it is a reason to choose the less pressured of the two approaches above.
+</FAQ>
+
+<ReviewedBy date="2026-05-16" />
+
+<ReferenceList />
+
+The honest answer to how often to have intercourse to conceive is either every other day in the fertile window or every 2 to 3 days across the cycle. Both work. Pick the one your relationship can sustain for the next several months. If you've been doing this consistently for several cycles and you're starting to wonder what else to look at, an online consultation can help you think it through.
+
+<ConsultCTA />

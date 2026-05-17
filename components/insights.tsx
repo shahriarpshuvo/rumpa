@@ -154,10 +154,7 @@ export function Insights() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between mb-12">
           <div className="max-w-xl">
-            <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-600">
-              § 03 — Reading Room
-            </span>
-            <h2 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight text-foreground">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight text-foreground">
               Insights &amp;
               <br />
               <Em>Education.</Em>

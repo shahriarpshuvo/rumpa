@@ -1,0 +1,100 @@
+---
+title: "How Long Does It Take to Get Pregnant on Average?"
+description: "How long does it take to get pregnant on average? An OB-GYN breaks down the cycle-by-cycle and age-by-age numbers, and when to consider testing."
+tags: [TTC, Ovulation, Fertility-Testing, Pre-Conception]
+thumbnail: "/content/blog/how-long-does-it-take-to-get-pregnant/media/cover.jpg"
+publishedAt: "2026-05-16"
+updatedAt: "2026-05-16"
+---
+
+If you've just started trying, or you're four months in and quietly counting cycles, you're probably asking how long does it take to get pregnant on average. The reassuring headline is "85% within a year," but that number flattens a curve that matters for how you read your own timeline.
+
+The honest answer is more useful, and more calming, than the average alone.
+
+<AuthorCard />
+
+## The Short Answer by Cycle
+
+For healthy couples under 35, the average time to conceive looks roughly like this. Per-cycle chance is around 15 to 20%. Cumulative chance is 30 to 40% by 3 cycles, 70 to 75% by 6 cycles, and 85% or more by 12 cycles. NICE-defined under-40 cohorts show over 80% conceive within one year, rising to over 90% in the second year.
+
+<Cite source="NICE" url="https://www.nice.org.uk/guidance/cg156/chapter/recommendations" />
+
+<Callout type="note">
+**Bold takeaway:** most pregnancies happen within the first 6 cycles. The 7th cycle is not failure. It is the middle of the normal curve.
+</Callout>
+
+For a fuller view of the first half of the journey, see [TTC tips for your first six months](/blog/trying-to-conceive-tips-first-6-months).
+
+## What "Average" Hides (the Curve Is Not Flat)
+
+The 85% number is a cumulative pregnancy rate, not a per-month probability. Per-cycle chance stays roughly constant for the fertile fraction of a cohort. What changes is who remains in that cohort each month.
+
+Some couples conceive in cycle 1 not because they were "lucky" but because their per-cycle chance sits at the top of the range. Couples still trying at cycle 8 often have a slightly lower (but not zero) per-cycle chance. This is statistical, not personal, and it is the point at which basic testing becomes worth considering rather than worth panicking about.
+
+<Cite source="StatPearls" url="https://www.ncbi.nlm.nih.gov/books/NBK556033/" />
+
+## How Age Changes the Timeline
+
+Age and fertility shape the curve more than any single lifestyle factor. The numbers below are population averages, not individual predictions.
+
+Under 30: average per-cycle probability around 20 to 25%, with roughly 84 to 88% pregnant within 12 cycles. Age 30 to 34: cumulative pregnancy around 88% within a year. Age 35 to 39: roughly 46% within 6 cycles and 67% within 12 cycles. Age 40 and over: per-cycle chance drops to around 5% on ASRM estimates.
+
+Patients ask me what is the average time to conceive at 30, and the honest answer is most couples in their early 30s conceive within 6 to 12 cycles of well-timed intercourse. If you are over 35, our notes on [trying to conceive after 35](/blog/ttc-after-35) explain why the evaluation thresholds shift forward.
+
+<Cite source="ACOG" url="https://www.acog.org/womens-health/faqs/evaluating-infertility" />
+
+## When to Worry, and When Not To
+
+Patients ask how many cycles before I should worry, and the guideline answer is reassuringly specific.
+
+<Callout type="uk">
+**UK / NHS thresholds.** Evaluation is offered after 12 months of regular intercourse if you are under 35, or after 6 months if you are 35 or older. Earlier evaluation is offered if you have known risk factors (irregular cycles, prior pelvic infection, endometriosis, prior chemotherapy, male partner risk factors).
+</Callout>
+
+<Callout type="us">
+**US / ASRM thresholds.** Same 12 and 6 month thresholds, though many US private clinics will evaluate sooner if requested and insurance allows.
+</Callout>
+
+<Cite source="NHS" url="https://www.nhs.uk/conditions/infertility/" />
+
+<Callout type="tip">
+Patients who come to me in cycle 4 worried they've waited too long, I reassure them that month 4 is statistically still early. Patients in cycle 9 with irregular cycles, I move forward. Two different conversations, both correct.
+</Callout>
+
+For the practical next steps when the timeline crosses six months, see [what to do after six months of trying](/blog/ttc-6-months-no-pregnancy) and [when to see a fertility specialist](/blog/when-to-see-fertility-specialist).
+
+## Things That Shift the Curve (in Either Direction)
+
+The honest version of how long does it take to get pregnant on average has to account for the levers that move it in both directions.
+
+Things that tend to shorten the timeline: timed intercourse around ovulation, healthy BMI, no smoking, optimised partner sperm health, and a treated thyroid. Things that tend to lengthen it: irregular cycles (PCOS / PMOS), male factor, age over 35, prior pelvic surgery, untreated thyroid disease, very high or very low BMI, and smoking. For specifics on the PCOS pathway, our overview on conception odds with the condition is here, and male-side optimisation is covered in our pre-conception notes.
+
+## FAQ
+
+<FAQ question="How long does it take to get pregnant after stopping the pill?">
+For most women, ovulation resumes within 1 to 3 months. Cumulative pregnancy rates within a year are similar to women who never used the pill.
+</FAQ>
+
+<FAQ question="Is it normal to take 6 months at age 32?">
+Yes. Roughly 30% of healthy couples in their early 30s are still trying at month 6. That is the middle of the normal range, not the late end.
+</FAQ>
+
+<FAQ question="Does breastfeeding the previous child delay pregnancy?">
+It can suppress ovulation, especially in the first 6 months of exclusive breastfeeding. Once feeds reduce or stop, cycles usually return within a few months.
+</FAQ>
+
+<FAQ question="Can I speed up the timeline?">
+You can optimise the controllables: timed intercourse, weight in a healthy range, no smoking, treated thyroid, partner sperm health. Beyond that, biology runs the curve.
+</FAQ>
+
+<FAQ question="When should I ask for an AMH test?">
+AMH is most useful if you are over 35, have a family history of early menopause, or are considering IVF. It is a marker of ovarian reserve, not a prediction of natural fertility, and should be interpreted alongside other tests.
+</FAQ>
+
+<ReviewedBy date="2026-05-16" />
+
+<ReferenceList />
+
+The honest answer to how long does it take to get pregnant on average is that most under-35 couples conceive within 6 to 12 cycles, with most pregnancies in the first half of that window. If you are outside the curve for your age or you have known risk factors, an early online consultation can help you decide whether to start testing rather than wait the full year.
+
+<ConsultCTA />

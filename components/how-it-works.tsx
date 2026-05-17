@@ -36,10 +36,7 @@ export function HowItWorks() {
     <section id="how-it-works" className="px-4 sm:px-6 py-24 sm:py-32 bg-adelaide-100/40">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
-          <span className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-600">
-            § 04 — How it works
-          </span>
-          <h2 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight text-foreground">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.02] tracking-tight text-foreground">
             Your fertility
             <br />
             journey, <Em>step by step.</Em>

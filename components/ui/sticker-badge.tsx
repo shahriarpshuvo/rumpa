@@ -17,10 +17,10 @@ export function StickerBadge({
     <div
       style={{ transform: `rotate(${rotate}deg)` }}
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold border-2",
+        "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-bold shadow-mauve",
         variant === "light"
-          ? "bg-secondary text-primary border-primary"
-          : "bg-primary text-primary-foreground border-primary-foreground",
+          ? "bg-secondary text-primary"
+          : "bg-primary text-primary-foreground",
         className,
       )}
     >
