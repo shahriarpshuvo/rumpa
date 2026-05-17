@@ -29,6 +29,13 @@ BG_POOL = ["dusty-mauve", "dusty-rose", "icy-mint", "pale-sage", "cream", "laven
 #
 # Skin + bg rotate by ordered index (not per-scene), to spread diversity.
 SCENES = {
+    "3-months-before-ttc": {
+        "subject": "woman", "setting": "kitchen counter morning",
+        "action": "a calm hopeful woman standing at a light kitchen counter holding a small vitamin bottle in one hand and a paper monthly planner in the other, looking down at the planner with quiet focus as she counts the weeks ahead, a glass of water and a small plate of fruit beside her on the counter",
+        "tops": "soft-peach short-sleeve top and sage-green wide-leg trousers",
+        "decor": "a line-art trailing houseplant on the left, a line-art kitchen window with simple curtain folds, a line-art wall shelf with simple jars, a line-art small wall calendar with a grid",
+        "bubbles": ["calendar", "pill"],
+    },
     "bbt-accuracy-ttc": {
         "subject": "woman", "setting": "bedroom at dawn",
         "action": "sitting up in bed at dawn, holding a digital basal body thermometer to her mouth with one hand and a small bedside notebook in her other hand, soft early-morning light filtering through the window",
@@ -110,7 +117,7 @@ SCENES = {
         "tops": "soft-peach maternity tunic and dusty-lavender trousers",
         "decor": "a line-art phlebotomy chair outline behind her, a line-art wall poster frame, a line-art houseplant",
         "bubbles": ["clock"],
-        "notes": "subtle pregnancy bump; no needle in skin",
+        "notes": "subtle pregnancy bump (silhouette only); fully and clearly clothed in an opaque sage-green long-sleeve maternity jumper over a cream tee plus dusty-lavender wide-leg trousers — NO bare torso, NO visible chest skin; no needle in skin",
     },
     "how-long-does-it-take-to-get-pregnant": {
         "subject": "woman", "setting": "desk at home",
