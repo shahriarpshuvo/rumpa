@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Lora, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Lora, Google_Sans_Flex, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 
-const dmSans = DM_Sans({
+const googleSans = Google_Sans_Flex({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "oklch(0.959 0.007 312.56)" },
-    { media: "(prefers-color-scheme: dark)",  color: "oklch(0.152 0.012 319.49)" },
+    { media: "(prefers-color-scheme: dark)", color: "oklch(0.152 0.012 319.49)" },
   ],
 };
 
@@ -103,21 +103,8 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn(
-        "h-full antialiased font-sans",
-        dmSans.variable,
-        lora.variable,
-        jetbrainsMono.variable,
-      )}
+      className={cn("h-full antialiased font-sans", googleSans.variable, lora.variable, jetbrainsMono.variable)}
     >
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <ThemeProvider>
           <Header />

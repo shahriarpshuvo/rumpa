@@ -11,7 +11,7 @@ import { StickerBadge } from "@/components/ui/sticker-badge";
 
 export function Hero() {
   return (
-    <section id="hero" className="px-4 sm:px-6 pt-6 pb-12">
+    <section id="hero">
       <motion.div
         initial={{ opacity: 0.7, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -23,8 +23,8 @@ export function Hero() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 flex items-center justify-center select-none"
         >
-          <span className="font- font-bold leading-none tracking-tighter text-adelaide-50/55 text-[180px] sm:text-[260px]">
-            <span className="mr-4">Dr.</span>Rumpa
+          <span className="font- font-extrabold leading-none tracking-tighter text-adelaide-50/55 text-[180px] sm:text-[260px]">
+            <span className="mr-8">Dr.</span>Rumpa
           </span>
         </div>
 
@@ -58,7 +58,7 @@ export function Hero() {
         </div>
 
         {/* portrait */}
-        <div className="relative -top-8 z-10 flex justify-center ">
+        <div className="relative -top-36 z-10 flex justify-center ">
           <div className="relative">
             <Image
               src="/img/hero.png"
@@ -85,7 +85,7 @@ export function Hero() {
         initial={{ opacity: 0.7, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-        className="relative mx-auto -mt-8 max-w-6xl rounded-3xl bg-card p-7 sm:p-10 shadow-mauve-lg z-20 ring-1 ring-adelaide-200"
+        className="relative mx-auto -mt-36 max-w-6xl rounded-3xl bg-card p-7 sm:p-10 shadow-mauve-lg z-20 ring-1 ring-adelaide-200"
       >
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 items-end">
           <div>

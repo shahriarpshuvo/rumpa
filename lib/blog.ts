@@ -3,10 +3,19 @@ import path from "path";
 import matter from "gray-matter";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
+const PUBLIC_DIR = path.join(process.cwd(), "public");
 
 function calcReadTime(content: string): number {
   const words = content.trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 220));
+}
+
+function resolveThumbnail(value: unknown): string | undefined {
+  if (typeof value !== "string" || !value) return undefined;
+  if (/^https?:\/\//i.test(value)) return value;
+  const rel = value.startsWith("/") ? value.slice(1) : value;
+  const abs = path.join(PUBLIC_DIR, rel);
+  return fs.existsSync(abs) ? value : undefined;
 }
 
 export type BlogCategory = "PCOS" | "Treatment" | "Preconception" | "Fertility";
@@ -16,7 +25,7 @@ export interface BlogPostMeta {
   title: string;
   date: string;
   description: string;
-  coverImage?: string;
+  thumbnail?: string;
   category?: BlogCategory;
   readTime?: number;
   featured?: boolean;
@@ -43,7 +52,7 @@ export function getAllPosts(): BlogPostMeta[] {
       title: data.title ?? slug,
       date: data.date ?? "",
       description: data.description ?? "",
-      coverImage: data.coverImage,
+      thumbnail: resolveThumbnail(data.thumbnail ?? data.coverImage),
       category: data.category as BlogCategory | undefined,
       readTime: data.readTime ?? calcReadTime(content),
       featured: data.featured ?? false,
@@ -81,7 +90,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     title: data.title ?? slug,
     date: data.date ?? "",
     description: data.description ?? "",
-    coverImage: data.coverImage,
+    thumbnail: resolveThumbnail(data.thumbnail ?? data.coverImage),
     category: data.category as BlogCategory | undefined,
     readTime: data.readTime ?? calcReadTime(content),
     featured: data.featured ?? false,

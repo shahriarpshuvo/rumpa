@@ -11,7 +11,7 @@ import { DATA } from "@/data/resume";
 const NAV = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Insights", href: "#insights" },
+  { label: "Insights", href: "/blog" },
   { label: "Contact", href: "#contact" },
 ];
 

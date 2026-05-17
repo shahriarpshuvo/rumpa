@@ -57,11 +57,11 @@ function FeaturedCard({ post }: { post: BlogPostMeta }) {
       className="group flex flex-col rounded-3xl bg-card overflow-hidden shadow-mauve-lg hover:shadow-mauve transition-shadow ring-1 ring-adelaide-200"
     >
       <div
-        className={`relative h-72 sm:h-96 bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center overflow-hidden grain`}
+        className={`relative aspect-[40/21] w-full bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center overflow-hidden grain`}
       >
-        {post.coverImage ? (
+        {post.thumbnail ? (
           <Image
-            src={post.coverImage}
+            src={post.thumbnail}
             alt={post.title}
             fill
             className="object-cover"
@@ -108,15 +108,21 @@ function SecondaryCard({ post }: { post: BlogPostMeta }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-1 rounded-3xl bg-card overflow-hidden shadow-mauve hover:shadow-mauve-lg transition-shadow ring-1 ring-adelaide-200"
+      className="group flex flex-1 flex-col rounded-3xl bg-card overflow-hidden shadow-mauve hover:shadow-mauve-lg transition-shadow ring-1 ring-adelaide-200"
     >
       <div
-        className={`relative w-44 flex-shrink-0 bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center grain`}
+        className={`relative aspect-[40/21] w-full flex-shrink-0 bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center grain overflow-hidden`}
       >
-        {post.coverImage ? (
-          <Image src={post.coverImage} alt={post.title} fill className="object-cover" sizes="180px" />
+        {post.thumbnail ? (
+          <Image
+            src={post.thumbnail}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 40vw"
+          />
         ) : (
-          <span className="font-display italic font-bold text-3xl text-adelaide-50/80 leading-none text-center px-2 tracking-tighter">
+          <span className="font-display italic font-bold text-4xl sm:text-5xl text-adelaide-50/80 leading-none text-center px-4 tracking-tighter">
             {post.category}
           </span>
         )}
@@ -142,12 +148,58 @@ function SecondaryCard({ post }: { post: BlogPostMeta }) {
   );
 }
 
+function CompactCard({ post }: { post: BlogPostMeta }) {
+  return (
+    <Link
+      href={`/blog/${post.slug}`}
+      className="group flex flex-col rounded-2xl bg-card overflow-hidden shadow-mauve hover:shadow-mauve-lg transition-shadow ring-1 ring-adelaide-200"
+    >
+      <div
+        className={`relative aspect-[40/21] w-full bg-gradient-to-br ${gradient(post.category)} flex items-center justify-center grain overflow-hidden`}
+      >
+        {post.thumbnail ? (
+          <Image
+            src={post.thumbnail}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 30vw"
+          />
+        ) : (
+          <span className="font-display italic font-bold text-3xl sm:text-4xl text-adelaide-50/80 leading-none text-center px-3 tracking-tighter">
+            {post.category}
+          </span>
+        )}
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+          {post.category && <Em className="text-sm">{post.category}</Em>}
+          {post.readTime && (
+            <>
+              <span className="opacity-30">·</span>
+              <span className="uppercase tracking-[0.15em] text-[11px] font-semibold">{post.readTime} min</span>
+            </>
+          )}
+        </div>
+        <h3 className="mt-2 text-base font-extrabold leading-snug text-foreground group-hover:text-adelaide-700 transition-colors line-clamp-2">
+          {applyEmphasis(post.title, post.emphasisWords)}
+        </h3>
+        <div className="mt-auto pt-4 text-[11px] uppercase tracking-[0.15em] text-blossom-600 font-bold">
+          {formatDate(post.date)} · Read →
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 export function Insights() {
   const all = getAllPosts();
   if (all.length === 0) return null;
 
   const featured = all.find((p) => p.featured) ?? all[0];
-  const secondaries = all.filter((p) => p.slug !== featured.slug).slice(0, 2);
+  const rest = all.filter((p) => p.slug !== featured.slug);
+  const secondaries = rest.slice(0, 2);
+  const tertiaries = rest.slice(2, 5);
 
   return (
     <section id="insights" className="px-4 sm:px-6 py-24 sm:py-32">
@@ -180,6 +232,14 @@ export function Insights() {
             ))}
           </div>
         </div>
+
+        {tertiaries.length > 0 && (
+          <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {tertiaries.map((post) => (
+              <CompactCard key={post.slug} post={post} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

@@ -124,7 +124,6 @@ export const DATA = {
     { label: "Years Experience", value: "12+" },
     { label: "Happy Families", value: "500+" },
     { label: "Success Rate", value: "85%" },
-    { label: "Research Papers", value: "15+" },
   ],
   faqs: [
     {

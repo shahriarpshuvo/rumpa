@@ -67,12 +67,12 @@ export function Services() {
 
         {/* quote cell */}
         <div className="relative mt-10 grid grid-cols-1 lg:grid-cols-[0.9fr_1.4fr] gap-4">
-          <div className="relative aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden ring-1 ring-adelaide-800">
+          <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[420px] rounded-2xl overflow-hidden ring-1 ring-adelaide-800">
             <Image
               src="/img/prescribing.png"
               alt="Dr. Rumpa at her desk reviewing patient records"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
           </div>

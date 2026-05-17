@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -8,6 +9,7 @@ import { Separator } from "@/components/ui/separator";
 import { BlogPostNav } from "@/components/blog-post-nav";
 import { getPostBySlug, getAdjacentPosts, getAllPosts } from "@/lib/blog";
 import { BlogHeader } from "@/components/blog-header";
+import { mdxComponents } from "@/components/mdx";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -21,6 +23,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const post = getPostBySlug(slug);
   if (!post) return { title: "Post Not Found" };
 
+  const ogImage = post.thumbnail ? `${SITE_URL}${post.thumbnail}` : `${SITE_URL}/social.png`;
+
   return {
     title: post.title,
     description: post.description,
@@ -33,7 +37,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       authors: ["Dr. Rezwana Rumpa"],
       images: [
         {
-          url: `${SITE_URL}/social.png`,
+          url: ogImage,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -44,7 +48,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [`${SITE_URL}/social.png`],
+      images: [ogImage],
     },
   };
 }
@@ -79,7 +83,6 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
   return (
     <main className="relative">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <BlogHeader />
       <div className="mx-auto max-w-3xl px-6 pt-8 pb-24">
         <Link
           href="/blog"
@@ -92,11 +95,25 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
         <h1 className="font-heading font-bold text-3xl md:text-4xl leading-tight">{post.title}</h1>
         <p className="text-sm text-muted-foreground mt-2">{formattedDate}</p>
 
+        {post.thumbnail && (
+          <div className="relative aspect-[40/21] w-full mt-6 rounded-2xl overflow-hidden bg-muted">
+            <Image
+              src={post.thumbnail}
+              alt={post.title}
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+        )}
+
         <Separator className="my-6" />
 
         <article className="prose dark:prose-invert max-w-full text-pretty font-sans leading-relaxed text-muted-foreground">
           <MDXRemote
             source={post.content}
+            components={mdxComponents}
             options={{
               mdxOptions: {
                 remarkPlugins: [remarkGfm],

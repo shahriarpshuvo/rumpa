@@ -7,9 +7,12 @@ import { Em } from "@/components/ui/em";
 
 export function MeetDoctor() {
   return (
-    <section id="about" className="relative px-4 sm:px-6 py-24 sm:py-32">
+    <section id="about" className="relative px-4 sm:px-6 py-24 sm:py-32 mt-36">
       {/* decorative dingbat */}
-      <div aria-hidden="true" className="absolute top-10 left-1/2 -translate-x-1/2 text-2xl text-blossom-500 tracking-[0.5em]">
+      <div
+        aria-hidden="true"
+        className="absolute top-10 left-1/2 -translate-x-1/2 text-2xl text-blossom-500 tracking-[0.5em]"
+      >
         ✦ ✦ ✦
       </div>
 
@@ -46,8 +49,8 @@ export function MeetDoctor() {
         </div>
 
         {/* photo + stat tile cluster */}
-        <div className="grid grid-cols-2 gap-3">
-          <div className="col-span-2 relative aspect-[5/4] rounded-2xl overflow-hidden ring-1 ring-adelaide-200 grain">
+        <div className="flex flex-col gap-3">
+          <div className="relative aspect-[5/4] rounded-lg overflow-hidden ring-1 ring-adelaide-200 grain">
             <Image
               src="/img/assuring.png"
               alt="Dr. Rumpa with a patient couple"
@@ -59,24 +62,25 @@ export function MeetDoctor() {
               In consultation
             </div>
           </div>
-          {DATA.stats.map((stat, i) => {
-            const variants = [
-              "bg-blossom-200 text-adelaide-950",
-              "bg-adelaide-200 text-adelaide-950",
-              "bg-adelaide-900 text-adelaide-100",
-              "bg-card text-foreground ring-1 ring-adelaide-200",
-            ];
-            return (
-              <div key={stat.label} className={`rounded-2xl p-5 ${variants[i % 4]}`}>
-                <div className="font-display italic font-semibold text-3xl sm:text-4xl leading-none">
-                  {stat.value}
+          <div className="grid grid-cols-3 gap-3">
+            {DATA.stats.map((stat, i) => {
+              const variants = [
+                "bg-blossom-200 text-adelaide-950",
+                "bg-adelaide-200 text-adelaide-950",
+                "bg-adelaide-900 text-adelaide-100",
+              ];
+              return (
+                <div key={stat.label} className={`rounded-lg p-5 sm:p-6 ${variants[i % 3]}`}>
+                  <div className="font-display italic font-semibold text-3xl sm:text-4xl leading-none">
+                    {stat.value}
+                  </div>
+                  <div className="mt-3 text-[10px] font-semibold uppercase tracking-[0.12em] opacity-80 whitespace-nowrap">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] opacity-80">
-                  {stat.label}
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
