@@ -15,15 +15,6 @@ export function MeetDoctor() {
 
       <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 items-start">
         <div>
-          <motion.span
-            initial={{ opacity: 0.6 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.4 }}
-            className="block text-[11px] font-bold uppercase tracking-[0.3em] text-blossom-600"
-          >
-            § 01 — Meet Dr. Rumpa
-          </motion.span>
-
           <motion.h2
             initial={{ opacity: 0.6, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,7 +42,6 @@ export function MeetDoctor() {
           {/* signature line */}
           <div className="mt-8 flex items-baseline gap-3">
             <span className="font-display italic text-2xl text-adelaide-700">— Dr. Rumpa</span>
-            <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Dhaka · Est. 2017</span>
           </div>
         </div>
 
