@@ -11,6 +11,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 BLOG = REPO / "content" / "blog"
+PROMPTS_DIR = REPO / "data" / "thumbnails"
 
 # ---------------- rotation pools (apply by index across the series) ----------
 SKIN_POOL = ["warm-brown", "olive", "deep-brown", "fair"]
@@ -483,11 +484,9 @@ def main():
 
         prompt = build_prompt(title, skin, bg, scene)
 
-        # Resolve THUMBNAIL.md path
-        if is_dir:
-            out = BLOG / slug / "THUMBNAIL.md"
-        else:
-            out = BLOG / f"{slug}.THUMBNAIL.md"
+        # Prompts live OUTSIDE content/blog (Nextra reads content/blog).
+        PROMPTS_DIR.mkdir(parents=True, exist_ok=True)
+        out = PROMPTS_DIR / f"{slug}.md"
 
         if out.exists():
             skipped += 1

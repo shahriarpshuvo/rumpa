@@ -54,7 +54,9 @@ except ImportError:
 
 REPO = Path(__file__).resolve().parent.parent
 BLOG = REPO / "content" / "blog"
-MEDIA = REPO / "assests" / "media"
+PROMPTS_DIR = REPO / "data" / "thumbnails"
+RAW_DIR = REPO / "assests" / "media" / "_raw"
+PUBLIC_DIR = REPO / "public" / "blog"
 ENV_FILE = REPO / ".env"
 
 OUTPUT_SIZE = (1200, 630)
@@ -233,39 +235,34 @@ def _resize_to(png_bytes, size):
 
 
 def find_thumbnail_md(slug):
-    """Locate THUMBNAIL.md for a slug. Supports both dir-style posts and
-    flat .mdx posts (the latter use a sidecar file at the same level).
+    """Locate the prompt file for a slug. Prompts live OUTSIDE content/blog
+    (Nextra renders content/blog) at data/thumbnails/<slug>.md.
     """
-    # Dir style: content/blog/<slug>/THUMBNAIL.md
-    dir_path = BLOG / slug / "THUMBNAIL.md"
-    if dir_path.exists():
-        return dir_path
-    # Flat mdx style: content/blog/<slug>.mdx + content/blog/<slug>.THUMBNAIL.md
-    flat_path = BLOG / f"{slug}.THUMBNAIL.md"
-    if flat_path.exists():
-        return flat_path
-    return None
+    p = PROMPTS_DIR / f"{slug}.md"
+    return p if p.exists() else None
 
 
 def generate_for_slug(slug, force=False, dry_run=False, watermark=True, model=None, system_instructions="", delay=0):
     src = find_thumbnail_md(slug)
     if not src:
-        print(f"SKIP {slug}: no THUMBNAIL.md found")
+        print(f"SKIP {slug}: no prompt file at {PROMPTS_DIR}/{slug}.md")
         return 0
     sec = parse_thumbnail_file(src)
     if not sec:
-        print(f"SKIP {slug}: THUMBNAIL.md has no **Prompt:** block")
+        print(f"SKIP {slug}: prompt file has no **Prompt:** block")
         return 0
 
-    MEDIA.mkdir(parents=True, exist_ok=True)
-    out_path = MEDIA / f"{slug}-thumbnail.png"
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
+    raw_path = RAW_DIR / f"{slug}-thumbnail.png"
+    final_path = PUBLIC_DIR / f"{slug}-thumbnail.jpg"
 
-    if out_path.exists() and not force:
-        print(f"  KEEP {out_path.name} (exists, use --force to overwrite)")
+    if final_path.exists() and not force:
+        print(f"  KEEP {final_path.name} (exists, use --force to overwrite)")
         return 0
 
     if dry_run:
-        print(f"  DRY  {out_path.name}  size={OUTPUT_SIZE}  src={src.name}  "
+        print(f"  DRY  {final_path.name}  size={OUTPUT_SIZE}  src={src.name}  "
               f"prompt={sec['prompt'][:80]}...")
         return 1
 
@@ -273,13 +270,14 @@ def generate_for_slug(slug, force=False, dry_run=False, watermark=True, model=No
         png_bytes = generate_image(sec["prompt"], sec["negative_prompt"],
                                    model=model, system_instructions=system_instructions)
         png_bytes = _resize_to(png_bytes, OUTPUT_SIZE)
-        out_path.write_bytes(png_bytes)
-        print(f"  OK   {out_path.name} ({len(png_bytes)//1024} KB, {OUTPUT_SIZE[0]}x{OUTPUT_SIZE[1]})")
+        raw_path.write_bytes(png_bytes)
+        print(f"  RAW  {raw_path.name} ({len(png_bytes)//1024} KB)")
         if watermark and WATERMARK_AVAILABLE:
             try:
-                wm_mod.apply_watermark(out_path, save_original=True)
+                wm_mod.apply_watermark(raw_path, output_path=final_path)
+                print(f"  OK   public/blog/{final_path.name} ({final_path.stat().st_size//1024} KB JPEG)")
             except Exception as e:
-                print(f"  WARN watermark {out_path.name}: {e}", file=sys.stderr)
+                print(f"  WARN watermark {final_path.name}: {e}", file=sys.stderr)
         if delay > 0:
             time.sleep(delay)
         return 1
@@ -310,7 +308,7 @@ def list_slugs_needing(force=False):
     for slug in list_all_slugs():
         if find_thumbnail_md(slug) is None:
             continue
-        if not force and (MEDIA / f"{slug}-thumbnail.png").exists():
+        if not force and (PUBLIC_DIR / f"{slug}-thumbnail.jpg").exists():
             continue
         out.append(slug)
     return out

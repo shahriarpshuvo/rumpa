@@ -32,13 +32,15 @@ except ImportError:
 SCRIPTS = Path(__file__).resolve().parent
 REPO = SCRIPTS.parent
 ASSESTS = REPO / "assests"
-MEDIA = ASSESTS / "media"
+RAW_DIR = ASSESTS / "media" / "_raw"
+PUBLIC_DIR = REPO / "public" / "blog"
 WATERMARK_PATH = ASSESTS / "watermark.png"
 
 # Watermark sizing + positioning
 WM_WIDTH_FRAC = 0.18    # watermark width = 18% of image width
 WM_MARGIN_PX = 24       # padding from right + bottom edge
 WM_OPACITY = 0.92       # 0.0 transparent .. 1.0 opaque (slight softening)
+JPEG_QUALITY = 85
 
 
 def _load_watermark(target_width_px):
@@ -59,22 +61,25 @@ def _load_watermark(target_width_px):
 def _save_image(img, out_path):
     suffix = out_path.suffix.lower()
     if suffix in (".jpg", ".jpeg"):
-        img.convert("RGB").save(out_path, "JPEG", quality=92)
+        bg = Image.new("RGB", img.size, (255, 255, 255))
+        bg.paste(img, mask=img.split()[3] if img.mode == "RGBA" else None)
+        bg.save(out_path, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
     else:
         img.save(out_path, "PNG")
 
 
-def _backup_raw(image_path):
-    raw_dir = MEDIA / "_raw"
-    raw_dir.mkdir(parents=True, exist_ok=True)
-    raw_dest = raw_dir / image_path.name
-    if not raw_dest.exists():
-        raw_dest.write_bytes(image_path.read_bytes())
+def apply_watermark(image_path, output_path=None, dry_run=False):
+    """Composite watermark onto image_path; write to output_path.
 
-
-def apply_watermark(image_path, output_path=None, dry_run=False, save_original=True):
+    Default output: public/blog/<basename>.jpg derived from raw filename.
+    Input is normally a raw PNG from assests/media/_raw/.
+    """
     image_path = Path(image_path)
-    out = Path(output_path) if output_path else image_path
+    if output_path is None:
+        out = PUBLIC_DIR / (image_path.stem + ".jpg")
+    else:
+        out = Path(output_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
 
     img = Image.open(image_path).convert("RGBA")
     target_w = max(1, round(img.width * WM_WIDTH_FRAC))
@@ -83,25 +88,21 @@ def apply_watermark(image_path, output_path=None, dry_run=False, save_original=T
     y = img.height - wm.height - WM_MARGIN_PX
 
     if dry_run:
-        print(f"  DRY  {image_path.name}  img={img.width}x{img.height}  "
+        print(f"  DRY  {image_path.name} -> {out.name}  img={img.width}x{img.height}  "
               f"wm={wm.width}x{wm.height}  at=({x},{y})")
         return
-
-    overwriting_in_place = (out == image_path)
-    if overwriting_in_place and save_original:
-        _backup_raw(image_path)
 
     img.alpha_composite(wm, dest=(x, y))
     _save_image(img, out)
 
     rel = out.relative_to(REPO) if out.is_relative_to(REPO) else out
-    print(f"  OK   {rel}")
+    print(f"  OK   {rel} ({out.stat().st_size//1024} KB)")
 
 
 def iter_all_thumbnails():
-    if not MEDIA.exists():
+    if not RAW_DIR.exists():
         return
-    for p in sorted(MEDIA.glob("*-thumbnail.png")):
+    for p in sorted(RAW_DIR.glob("*-thumbnail.png")):
         yield p
 
 
@@ -113,14 +114,12 @@ def main():
     g.add_argument("--all", action="store_true", help="Watermark every *-thumbnail.png under assests/media/")
 
     ap.add_argument("--out", help="Output path (only valid with one explicit path).")
-    ap.add_argument("--no-keep-raw", action="store_true",
-                    help="Do NOT save original to assests/media/_raw/ before overwriting.")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     targets = []
     if args.slug:
-        p = MEDIA / f"{args.slug}-thumbnail.png"
+        p = RAW_DIR / f"{args.slug}-thumbnail.png"
         if p.exists():
             targets.append(p)
         else:
@@ -140,8 +139,7 @@ def main():
     for p in targets:
         try:
             out = Path(args.out) if args.out else None
-            apply_watermark(p, output_path=out, dry_run=args.dry_run,
-                            save_original=not args.no_keep_raw)
+            apply_watermark(p, output_path=out, dry_run=args.dry_run)
         except Exception as e:
             print(f"  FAIL {p}: {e}", file=sys.stderr)
 
